@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
   },
+  verification: {
+    google: "tDdV_tWkrT7MCpfVbsm9ktjtIteb48PW07SSIVzVp8c",
+  },
 };
 
 export default async function LocaleLayout({
