@@ -1,0 +1,314 @@
+{
+  "common": {
+    "home": "Accueil"
+  },
+  "content": {
+    "faqHeading": "Questions fréquentes",
+    "ctaPrefix": "Prêt à convertir votre propre image ?"
+  },
+  "nav": {
+    "tool": "Outil",
+    "guides": "Guides",
+    "useCases": "Cas d'usage",
+    "blog": "Blog",
+    "about": "À propos",
+    "skipToContent": "Aller au contenu",
+    "toggleTheme": "Activer/désactiver le mode sombre",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue"
+  },
+  "footer": {
+    "tagline": "Conversion PNG vers SVG gratuite, privée et directement dans le navigateur.",
+    "productHeading": "Produit",
+    "guidesHeading": "Guides",
+    "useCasesHeading": "Cas d'usage",
+    "companyHeading": "Entreprise",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "home": {
+    "metaTitle": "Convertisseur PNG en SVG Gratuit — Convertir des Images en Vecteur en Ligne",
+    "metaDescription": "Convertissez vos PNG en SVG gratuitement, directement dans votre navigateur. Vectorisation réelle avec modes Noir & Blanc et Couleur, gestion de la transparence, sans inscription, sans filigrane, sans envoi de fichier.",
+    "schemaDescription": "Outil gratuit, privé et basé sur le navigateur qui convertit des images PNG en fichiers vectoriels SVG à base de tracés.",
+    "h1": "Convertisseur PNG en SVG Gratuit — Convertir des Images en Vecteur en Ligne",
+    "subtitle": "Déposez un PNG et récupérez un SVG propre, modifiable et basé sur des tracés — vectorisé entièrement dans votre navigateur. Rien n'est jamais envoyé sur un serveur.",
+    "badgeFree": "Gratuit pour toujours",
+    "badgePrivate": "100 % privé",
+    "badgeNoSignup": "Sans inscription",
+    "badgeNoWatermark": "Sans filigrane",
+    "ctaTryTool": "Essayer l'outil gratuitement",
+    "whatIsHeading": "Qu'est-ce que la vectorisation d'image ?",
+    "whatIsBody": "Un PNG est une grille de pixels colorés : zoomez suffisamment et vous verrez apparaître les blocs. Un SVG fonctionne différemment : il stocke une image sous forme d'un ensemble de tracés et de formes mathématiques, ce qui lui permet de s'adapter à n'importe quelle taille, d'un favicon à un panneau publicitaire, sans jamais devenir flou ou pixelisé. La vectorisation (aussi appelée « tracé d'image » ou « autotracing ») consiste à analyser une image matricielle comme un PNG et à la reconstruire sous forme de ces tracés vectoriels redimensionnables. C'est exactement ce que fait cet outil, instantanément et entièrement sur votre appareil.",
+    "pngVsSvgHeading": "PNG et SVG en un coup d'œil",
+    "pngVsSvgIntro": "En bref : un PNG est figé à la résolution à laquelle il a été enregistré, tandis qu'un SVG se redessine parfaitement à n'importe quelle taille. Voici comment ces deux formats se comparent réellement.",
+    "comparisonTable": {
+      "headers": ["", "PNG", "SVG"],
+      "rows": [
+        ["Composé de", "Pixels", "Tracés et formes"],
+        ["Redimensionnement", "Devient flou au-delà de la taille d'origine", "S'adapte à toute taille sans perte de qualité"],
+        ["Taille de fichier type (icône/logo)", "Plus lourd, une taille à la fois", "Plus léger, un seul fichier pour toutes les tailles"],
+        ["Formes modifiables ?", "Non — pixels uniquement", "Oui — dans Illustrator, Inkscape, Figma"],
+        ["Idéal pour", "Photos, textures", "Logos, icônes, dessins au trait, fichiers de découpe"]
+      ]
+    },
+    "bestForHeading": "Idéal pour ces types d'images",
+    "bestForLogos": "Logos et icônes",
+    "bestForLogosBody": "Les couleurs unies et les contours nets se transforment en quelques tracés propres et parfaitement redimensionnables — parfait pour les logos de marque, les icônes d'application et les badges.",
+    "bestForPhotos": "Photographies",
+    "bestForPhotosBody": "Le mode Couleur conserve la palette de votre photo sous forme de zones vectorisées, idéal pour créer un rendu vectoriel stylisé, façon affiche, à partir d'une photo.",
+    "bestForSketches": "Croquis et dessins au trait",
+    "bestForSketchesBody": "Le mode Noir & Blanc transforme les croquis au crayon et les dessins au trait en un seul tracé propre — parfait pour la découpe laser et le vinyle.",
+    "whoUsesHeading": "Qui utilise ce convertisseur PNG en SVG",
+    "whoUses": [
+      {
+        "title": "Designers et développeurs",
+        "body": "Transforment un logo, une icône ou un asset raster en SVG évolutif pour un site web, une application ou un système de design, sans quitter le navigateur."
+      },
+      {
+        "title": "Makers et créateurs",
+        "body": "Préparent des visuels pour Cricut, Silhouette, découpeuses laser et logiciels de digitalisation de broderie, où un vrai tracé de coupe compte plus qu'une jolie image."
+      },
+      {
+        "title": "Petits commerçants",
+        "body": "Convertissent un logo PNG existant en SVG pour l'impression, la signalétique ou le merchandising, sans payer un designer pour le redessiner."
+      },
+      {
+        "title": "Étudiants et amateurs",
+        "body": "Apprennent le fonctionnement des graphiques vectoriels, ou ont simplement besoin d'une conversion ponctuelle pour un projet scolaire, sans installer de logiciel de design."
+      }
+    ],
+    "whyHeading": "Ce qui nous différencie",
+    "formatsHeading": "Formats pris en charge et compatibilité de votre SVG",
+    "formatsBody": "Cet outil se concentre volontairement sur une seule tâche : du PNG en entrée, un vrai SVG à base de tracés en sortie. Le PNG est le format qui compte le plus ici car c'est celui qui conserve fidèlement la transparence par pixel, que l'outil de tracé lit directement dans votre fichier. Chaque SVG téléchargé est un fichier vectoriel standard, conforme aux spécifications — pas un format propriétaire — il s'ouvre donc de la même façon partout où un navigateur ou un logiciel de design attend du SVG.",
+    "formatsList": [
+      "Éditeurs vectoriels : Adobe Illustrator, Inkscape, Affinity Designer, Figma",
+      "Logiciels de découpe : Cricut Design Space, Silhouette Studio",
+      "Logiciels de découpe laser : LightBurn, LaserGRBL",
+      "Logiciels de digitalisation de broderie, comme contour de départ",
+      "Tout navigateur web moderne, en tant qu'<img>, arrière-plan ou élément intégré"
+    ],
+    "howHeading": "Comment convertir un PNG en SVG",
+    "howStep1Title": "Importez votre PNG",
+    "howStep1Body": "Glissez-déposez un ou plusieurs fichiers PNG, ou cliquez pour parcourir vos fichiers. Aucune limite de taille et rien ne quitte votre appareil.",
+    "howStep2Title": "Choisissez vos réglages",
+    "howStep2Body": "Sélectionnez la vectorisation Noir & Blanc ou Couleur, ajustez le nombre de couleurs et le niveau de détail, et décidez si l'arrière-plan doit rester transparent.",
+    "howStep3Title": "Prévisualisez et téléchargez",
+    "howStep3Body": "Vérifiez l'aperçu avant/après en direct, puis téléchargez un vrai fichier SVG à base de tracés, prêt à être ouvert dans n'importe quel éditeur vectoriel.",
+    "useCasesHeading": "Cas d'usage populaires",
+    "learnMoreHeading": "En savoir plus",
+    "faqHeading": "Questions fréquentes",
+    "usps": [
+      {
+        "title": "Une vraie vectorisation, pas un simple emballage",
+        "body": "Chaque SVG que nous produisons est composé de véritables éléments <path> vectorisés à partir de votre image — jamais une image matricielle réencodée en Base64 et collée dans une balise SVG."
+      },
+      {
+        "title": "Vos couleurs préservées, à votre façon",
+        "body": "Le mode Couleur conserve votre palette d'origine ; ajustez le nombre de couleurs pour arbitrer entre fidélité, poids du fichier et complexité des tracés."
+      },
+      {
+        "title": "Les arrière-plans transparents sont conservés",
+        "body": "La transparence alpha du PNG est lue directement depuis votre fichier source et préservée dans le SVG vectorisé, sans détourage manuel."
+      },
+      {
+        "title": "Sans inscription, sans filigrane",
+        "body": "Convertissez autant de fichiers que vous le souhaitez sans créer de compte, et chaque téléchargement est un fichier propre, sans rien ajouté."
+      },
+      {
+        "title": "Fonctionne entièrement dans votre navigateur",
+        "body": "La vectorisation s'effectue sur votre appareil grâce à l'API Canvas et à un worker en arrière-plan — vos images ne sont jamais envoyées où que ce soit."
+      },
+      {
+        "title": "Conçu pour Cricut, Silhouette et les découpeuses laser",
+        "body": "Le résultat est un SVG standard à base de tracés qui s'importe sans problème dans Cricut Design Space, Silhouette Studio et les logiciels de découpe laser."
+      }
+    ],
+    "useCaseCards": [
+      { "href": "/use-cases/cricut", "label": "Convertir un PNG en SVG pour les découpeuses Cricut" },
+      { "href": "/use-cases/laser-cutting", "label": "Préparer un visuel PNG pour la découpe laser en SVG" },
+      { "href": "/use-cases/silhouette-vinyl-cutting", "label": "Vectoriser des PNG pour la découpe vinyle Silhouette" },
+      { "href": "/use-cases/embroidery-digitizing", "label": "Transformer des designs PNG en SVG pour la digitalisation de broderie" }
+    ],
+    "learnMoreCards": [
+      { "href": "/guides/png-vs-svg", "label": "PNG vs SVG : quelle est la vraie différence ?" },
+      { "href": "/guides/how-image-tracing-works", "label": "Comment fonctionne la vectorisation d'image ?" },
+      { "href": "/guides/convert-logo-to-svg", "label": "Comment convertir un logo en SVG" }
+    ],
+    "faqs": [
+      {
+        "question": "Ce convertisseur PNG en SVG est-il vraiment gratuit ?",
+        "answer": "Oui. Chaque conversion est gratuite, sans limite sur le nombre de fichiers, sans abonnement et sans filigrane ajouté à vos téléchargements."
+      },
+      {
+        "question": "Le SVG fonctionnera-t-il dans Cricut Design Space ou Silhouette Studio ?",
+        "answer": "Oui. Le résultat est un fichier SVG standard à base de tracés, que Cricut Design Space comme Silhouette Studio peuvent importer directement."
+      },
+      {
+        "question": "Puis-je contrôler le nombre de couleurs du SVG vectorisé ?",
+        "answer": "Oui. Le mode Couleur propose un curseur de nombre de couleurs qui vous permet de simplifier une photo en quelques zones unies ou de conserver une palette plus riche."
+      },
+      {
+        "question": "L'outil préserve-t-il les arrière-plans transparents ?",
+        "answer": "Oui. Si votre PNG a un arrière-plan transparent, cette transparence est lue depuis le canal alpha et reportée sur le SVG."
+      },
+      {
+        "question": "Quelle est la vraie différence entre PNG et SVG ?",
+        "answer": "Un PNG est une grille de pixels fixe, ce qui le rend flou lorsqu'on l'agrandit. Un SVG stocke une image sous forme de tracés mathématiques, ce qui lui permet d'être redimensionné à n'importe quelle taille sans perte de qualité."
+      },
+      {
+        "question": "Puis-je modifier le SVG après l'avoir téléchargé ?",
+        "answer": "Oui. Comme le résultat est un vrai fichier de tracés, vous pouvez l'ouvrir dans Illustrator, Inkscape, Figma ou tout autre éditeur vectoriel et modifier directement les formes."
+      },
+      {
+        "question": "Y a-t-il une limite de taille ou de nombre de fichiers ?",
+        "answer": "Non. Vous pouvez convertir autant de fichiers PNG que vous le souhaitez, sans plafond artificiel de taille — les images très volumineuses prendront simplement un peu plus de temps à vectoriser."
+      },
+      {
+        "question": "Cet outil fonctionne-t-il aussi bien pour les logos que pour les photographies ?",
+        "answer": "Les logos et icônes aux couleurs unies se vectorisent particulièrement bien en quelques tracés seulement. Les photographies donnent de meilleurs résultats en mode Couleur et produisent un rendu vectoriel plus stylisé, façon affiche, plutôt qu'une copie pixel pour pixel."
+      },
+      {
+        "question": "Stockez-vous ou envoyez-vous mes images sur un serveur ?",
+        "answer": "Non. La conversion s'effectue entièrement sur votre appareil grâce à l'API Canvas de votre navigateur — vos fichiers ne sont jamais envoyés à un serveur ni stockés où que ce soit."
+      },
+      {
+        "question": "Quels logiciels peuvent ouvrir les fichiers SVG que je télécharge ?",
+        "answer": "Tout fichier SVG standard fonctionne dans Adobe Illustrator, Inkscape, Figma, Affinity Designer, Cricut Design Space, Silhouette Studio et les navigateurs web."
+      },
+      {
+        "question": "Est-ce un vectoriseur basé sur l'IA ?",
+        "answer": "Non — il utilise un algorithme de tracé déterministe (quantification des couleurs et détection des contours), pas un modèle d'apprentissage automatique. Cela signifie que la même image et les mêmes réglages produisent toujours le même résultat, et que chaque réglage que vous voyez est un réglage que vous contrôlez réellement, plutôt qu'un bouton \"qualité IA\" opaque."
+      },
+      {
+        "question": "Puis-je convertir des images JPG ou WebP, pas seulement du PNG ?",
+        "answer": "Cet outil se concentre spécifiquement sur le PNG, car la transparence par pixel du PNG est essentielle à la façon dont les arrière-plans sont gérés. Si vous avez un JPG ou un WebP, l'enregistrer d'abord en PNG fonctionne bien, surtout si vous n'avez pas besoin de conserver la transparence."
+      }
+    ]
+  },
+  "tool": {
+    "dropzoneTitle": "Glissez-déposez vos fichiers PNG ici",
+    "dropzoneSubtitle": "ou cliquez pour parcourir — plusieurs fichiers pris en charge, sans limite de taille",
+    "browseButton": "Choisir des fichiers",
+    "modeLabel": "Mode de vectorisation",
+    "modeBw": "Noir & Blanc",
+    "modeColor": "Couleur",
+    "colorCountLabel": "Nombre de couleurs",
+    "detailLabel": "Détail / lissage",
+    "transparentLabel": "Arrière-plan transparent",
+    "originalLabel": "Original (PNG)",
+    "tracedLabel": "Vectorisé (SVG)",
+    "downloadButton": "Télécharger le SVG",
+    "removeButton": "Retirer",
+    "processingLabel": "Vectorisation…",
+    "clearAllButton": "Tout effacer",
+    "fileCount": "{count, plural, one {# fichier} other {# fichiers}}",
+    "workerUnavailable": "Worker non disponible",
+    "couldNotReadImage": "Impossible de lire l'image"
+  },
+  "guidesHub": {
+    "metaTitle": "Guides PNG vers SVG",
+    "metaDescription": "Guides approfondis sur PNG vs SVG, le fonctionnement de la vectorisation d'image, la conversion de logos en SVG, la modification de SVG après conversion, et le raster vs vecteur.",
+    "title": "Guides",
+    "intro": "Tout ce qu'il faut savoir sur la conversion entre graphismes matriciels et vectoriels — des bases du PNG vs SVG aux étapes concrètes pour les logos et les fichiers de découpe."
+  },
+  "useCasesHub": {
+    "metaTitle": "Cas d'usage PNG vers SVG",
+    "metaDescription": "Découvrez comment convertir un PNG en SVG pour Cricut, la découpe laser, la découpe vinyle Silhouette et la digitalisation de broderie — avec des réglages étape par étape pour chacun.",
+    "title": "Cas d'usage",
+    "intro": "Des tutoriels pratiques et spécifiques à chaque outil pour transformer un design PNG en SVG prêt à découper ou à broder, adaptés aux machines et logiciels les plus utilisés par les créateurs."
+  },
+  "blogHub": {
+    "metaTitle": "Blog",
+    "metaDescription": "Tutoriels, comparatifs et dépannage pour la conversion PNG vers SVG, les stickers vinyle, les icônes et les graphismes vectoriels.",
+    "title": "Blog",
+    "intro": "Tutoriels, comparatifs et dépannage pour travailler avec le PNG, le SVG et les graphismes vectoriels."
+  },
+  "about": {
+    "metaTitle": "À propos",
+    "metaDescription": "PNGtoSVG est un convertisseur PNG en SVG gratuit et basé sur le navigateur, conçu pour rendre la vectorisation d'image rapide, privée et accessible sans inscription ni filigrane.",
+    "title": "À propos de PNGtoSVG",
+    "p1": "PNGtoSVG est un outil gratuit, basé sur le navigateur, qui convertit des images PNG en véritables fichiers vectoriels SVG à base de tracés. Il existe pour rendre la vectorisation d'image — transformer une image matricielle en tracés vectoriels redimensionnables — rapide, privée et accessible à tous, sans abonnement payant, sans compte obligatoire et sans filigrane sur le résultat.",
+    "p2": "Chaque conversion s'exécute localement dans votre navigateur grâce à l'API Canvas et à un Web Worker en arrière-plan. Votre image est décodée, vectorisée et transformée en SVG entièrement sur votre propre appareil — elle n'est jamais envoyée à un serveur, ce qui nous permet d'affirmer que l'outil est 100 % privé par conception, et non simplement par politique.",
+    "p3": "Nous avons créé PNGtoSVG après nous être heurtés à plusieurs reprises au même problème : avoir besoin d'un moyen rapide et fiable de transformer un logo, un croquis ou une icône en fichier vectoriel propre pour une machine de découpe, un site web ou un projet d'impression, sans installer de logiciel de design ni envoyer de fichiers vers un énième service à inscription obligatoire.",
+    "whoHeading": "Qui utilise PNGtoSVG",
+    "whoMakersTitle": "Créateurs et bricoleurs",
+    "whoMakersBody": "Préparation de designs pour Cricut, Silhouette, découpeuses laser et logiciels de digitalisation pour broderie.",
+    "whoDesignersTitle": "Designers et développeurs",
+    "whoDesignersBody": "Transformation d'un logo ou d'une icône matricielle en SVG redimensionnable pour un site web, une application ou un projet d'impression.",
+    "approachHeading": "Notre approche",
+    "approachP1": "Nous gardons l'outil gratuit et illimité, car un convertisseur qui verrouille des fonctionnalités de base derrière un abonnement payant ne résout pas vraiment le problème qu'il prétend résoudre. Nous le gardons privé parce que nous ne voulons tout simplement pas assumer la responsabilité, la complexité ou la question de confiance que pose l'hébergement des fichiers image de qui que ce soit sur un serveur.",
+    "approachP2": "Si vous souhaitez en savoir plus sur le fonctionnement de la conversion, consultez [comment fonctionne la vectorisation d'image](/guides/how-image-tracing-works), ou lisez notre [politique de confidentialité](/privacy) pour le détail complet des données (le cas échéant) que nous collectons.",
+    "ctaText": "Prêt à voir l'outil en action ?",
+    "ctaButton": "Essayer l'outil gratuitement"
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité",
+    "metaDescription": "Comment PNGtoSVG traite vos données : vos images ne sont jamais envoyées sur un serveur, et nous ne collectons que des statistiques de site minimales et agrégées.",
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : juillet 2026",
+    "sections": [
+      {
+        "heading": "Vos images ne sont jamais envoyées sur un serveur",
+        "body": "PNGtoSVG convertit les images entièrement dans votre navigateur grâce à l'API Canvas et à un Web Worker en arrière-plan. Le fichier PNG que vous sélectionnez est lu, vectorisé et transformé en SVG sur votre propre appareil — il n'est jamais envoyé à nos serveurs ni à un tiers, et nous n'avons aucune possibilité de voir, stocker ou accéder aux images que vous convertissez."
+      },
+      {
+        "heading": "Aucun compte requis",
+        "body": "Vous n'avez pas besoin de créer un compte ni de fournir une adresse e-mail pour utiliser le convertisseur : nous ne collectons donc aucune information personnelle dans le cadre du processus de conversion lui-même."
+      },
+      {
+        "heading": "Statistiques",
+        "body": "Nous pouvons utiliser des statistiques agrégées et respectueuses de la vie privée (comme des comptages anonymisés de pages vues) pour comprendre le trafic global et améliorer le site. Ces données ne permettent pas de vous identifier individuellement, et nous n'utilisons pas de traceurs publicitaires tiers ni ne vendons de données à des annonceurs."
+      },
+      {
+        "heading": "Cookies",
+        "body": "Nous utilisons une seule entrée de stockage local dans votre navigateur pour mémoriser votre préférence de thème clair/sombre. Cette information reste sur votre appareil et ne nous est jamais transmise."
+      },
+      {
+        "heading": "Confidentialité des enfants",
+        "body": "PNGtoSVG ne collecte sciemment aucune information personnelle auprès des enfants, puisque l'outil ne collecte d'information personnelle auprès d'aucun utilisateur, quel qu'il soit."
+      },
+      {
+        "heading": "Modifications de cette politique",
+        "body": "Si nos pratiques en matière de données venaient à changer, nous mettrons à jour cette page avec une nouvelle date de « dernière mise à jour ». La conversion s'effectuant entièrement dans votre navigateur, nous ne prévoyons pas que cette politique change souvent."
+      },
+      {
+        "heading": "Contact",
+        "body": "Pour toute question concernant cette politique, vous pouvez écrire à privacy@pngtosvgconverter.com."
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Conditions d'utilisation",
+    "metaDescription": "Les conditions régissant l'utilisation de l'outil et du site de conversion d'images gratuit PNGtoSVG.",
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : juillet 2026",
+    "sections": [
+      {
+        "heading": "Utilisation du service",
+        "body": "PNGtoSVG est fourni gratuitement pour convertir vos propres images de PNG en SVG. Vous pouvez l'utiliser à des fins personnelles, commerciales ou éducatives. Vous acceptez de ne pas utiliser le service d'une manière qui en perturbe le fonctionnement pour les autres utilisateurs ou qui tente de contourner son fonctionnement normal."
+      },
+      {
+        "heading": "Votre contenu",
+        "body": "Vous conservez tous les droits sur les images que vous convertissez et sur les fichiers SVG produits par l'outil. La conversion s'effectuant entièrement dans votre navigateur, nous ne recevons, ne stockons et ne revendiquons jamais aucun droit sur vos images ou sur le résultat produit."
+      },
+      {
+        "heading": "Aucune garantie",
+        "body": "Le service est fourni « en l'état », sans garantie d'aucune sorte, expresse ou implicite. Nous ne garantissons pas que le résultat de la vectorisation conviendra à tout usage ou support, et nous vous recommandons de vérifier tout fichier converti avant de l'utiliser dans un projet de production, d'impression ou de découpe."
+      },
+      {
+        "heading": "Limitation de responsabilité",
+        "body": "Dans toute la mesure permise par la loi, PNGtoSVG ne pourra être tenu responsable de tout dommage indirect, accessoire ou consécutif résultant de votre utilisation du service, y compris les dommages liés au matériau, au temps ou au résultat d'une conversion."
+      },
+      {
+        "heading": "Modifications du service ou des conditions",
+        "body": "Nous pouvons mettre à jour ces conditions ou le service lui-même de temps à autre. La poursuite de l'utilisation du site après une modification signifie que vous acceptez les conditions mises à jour."
+      },
+      {
+        "heading": "Contact",
+        "body": "Pour toute question concernant ces conditions, vous pouvez écrire à support@pngtosvgconverter.com."
+      }
+    ]
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "common": {
+    "home": "Home"
+  },
+  "content": {
+    "faqHeading": "Frequently Asked Questions",
+    "ctaPrefix": "Ready to convert your own image?"
+  },
+  "nav": {
+    "tool": "Tool",
+    "guides": "Guides",
+    "useCases": "Use Cases",
+    "blog": "Blog",
+    "about": "About",
+    "skipToContent": "Skip to content",
+    "toggleTheme": "Toggle dark mode",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "footer": {
+    "tagline": "Free, private, browser-based PNG to SVG conversion.",
+    "productHeading": "Product",
+    "guidesHeading": "Guides",
+    "useCasesHeading": "Use Cases",
+    "companyHeading": "Company",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "metaTitle": "Free PNG to SVG Converter — Convert Images to Vector Online",
+    "metaDescription": "Convert PNG to SVG free, right in your browser. True vector tracing with Black & White and Full Color modes, transparency support, no signup, no watermark, no upload.",
+    "schemaDescription": "Free, private, browser-based tool that converts PNG images to path-based SVG vector files.",
+    "h1": "Free PNG to SVG Converter — Convert Images to Vector Online",
+    "subtitle": "Drag in a PNG and get back a clean, editable, path-based SVG — traced entirely in your browser. Nothing is ever uploaded.",
+    "badgeFree": "Free forever",
+    "badgePrivate": "100% private",
+    "badgeNoSignup": "No signup",
+    "badgeNoWatermark": "No watermark",
+    "ctaTryTool": "Try the tool free",
+    "whatIsHeading": "What Is Image Vectorization?",
+    "whatIsBody": "A PNG is a grid of colored pixels — zoom in far enough and you'll see the blocks. An SVG is different: it stores an image as a set of mathematical paths and shapes, so it can scale to any size, from a favicon to a billboard, without ever going blurry or pixelated. Vectorization (also called \"image tracing\") is the process of analyzing a raster image like a PNG and reconstructing it as those scalable vector paths. That's exactly what this tool does, instantly and entirely on your device.",
+    "pngVsSvgHeading": "PNG vs SVG at a Glance",
+    "pngVsSvgIntro": "The short version: a PNG is fixed at whatever resolution it was saved at, while an SVG redraws itself perfectly at any size. Here's how the two formats actually compare.",
+    "comparisonTable": {
+      "headers": ["", "PNG", "SVG"],
+      "rows": [
+        ["Made of", "Pixels", "Paths & shapes"],
+        ["Scaling", "Blurs above native size", "Scales to any size, no quality loss"],
+        ["Typical file size (icon/logo)", "Larger, one size at a time", "Smaller, one file for every size"],
+        ["Editable shapes?", "No — pixels only", "Yes — in Illustrator, Inkscape, Figma"],
+        ["Best for", "Photos, textures", "Logos, icons, line art, cut files"]
+      ]
+    },
+    "bestForHeading": "Best For These Image Types",
+    "bestForLogos": "Logos & Icons",
+    "bestForLogosBody": "Flat colors and crisp edges trace into a handful of clean, perfectly scalable paths — ideal for brand marks, app icons, and badges.",
+    "bestForPhotos": "Photographs",
+    "bestForPhotosBody": "Full-color mode preserves your photo's palette as traced regions, useful for stylized, poster-like vector art from a photo.",
+    "bestForSketches": "Sketches & Line Art",
+    "bestForSketchesBody": "Black & White mode turns pencil sketches and line drawings into a single clean path — great for laser cutting and vinyl.",
+    "whoUsesHeading": "Who Uses This PNG to SVG Converter",
+    "whoUses": [
+      {
+        "title": "Designers & developers",
+        "body": "Turning a raster logo, icon, or mockup asset into a scalable SVG for a website, app, or design system — without leaving the browser to do it."
+      },
+      {
+        "title": "Makers & crafters",
+        "body": "Preparing artwork for Cricut, Silhouette, laser cutters, and embroidery digitizing software, where a real cut path matters more than a pretty picture."
+      },
+      {
+        "title": "Small business owners",
+        "body": "Converting an existing PNG logo into SVG for print, signage, or merchandise, without paying a designer to redraw it from scratch."
+      },
+      {
+        "title": "Students & hobbyists",
+        "body": "Learning how vector graphics work, or just needing a one-off conversion for a school project, without installing design software."
+      }
+    ],
+    "whyHeading": "Why We're Different",
+    "formatsHeading": "Supported Formats & Where Your SVG Works",
+    "formatsBody": "This tool is deliberately focused on one job: PNG in, real path-based SVG out. PNG is the format that matters most here because it's the one format that reliably carries per-pixel transparency, which the tracer reads directly from your file. Every SVG you download is a standard, spec-compliant vector file — not a proprietary format — so it opens the same way everywhere a browser or design tool expects SVG.",
+    "formatsList": [
+      "Vector editors: Adobe Illustrator, Inkscape, Affinity Designer, Figma",
+      "Cutting software: Cricut Design Space, Silhouette Studio",
+      "Laser cutting software: LightBurn, LaserGRBL",
+      "Embroidery digitizing software, as a starting outline",
+      "Any modern web browser, as an <img>, background, or inline element"
+    ],
+    "howHeading": "How to Convert PNG to SVG",
+    "howStep1Title": "Upload your PNG",
+    "howStep1Body": "Drag and drop one or more PNG files, or click to browse. There's no file-size limit and nothing leaves your device.",
+    "howStep2Title": "Choose your settings",
+    "howStep2Body": "Pick Black & White or Full Color tracing, adjust color count and detail, and decide whether to keep the background transparent.",
+    "howStep3Title": "Preview and download",
+    "howStep3Body": "Check the live before/after preview, then download a real, path-based SVG file ready to open in any vector editor.",
+    "useCasesHeading": "Popular Use Cases",
+    "learnMoreHeading": "Learn More",
+    "faqHeading": "Frequently Asked Questions",
+    "usps": [
+      {
+        "title": "True vectorization, not a wrapper",
+        "body": "Every SVG we output is made of real <path> elements traced from your image — never a raster image re-encoded as Base64 and pasted into an SVG tag."
+      },
+      {
+        "title": "Colors preserved, your way",
+        "body": "Full Color mode keeps your original palette; adjust the color count to trade off fidelity against file size and path complexity."
+      },
+      {
+        "title": "Transparent backgrounds carry through",
+        "body": "PNG alpha transparency is read directly from your source file and preserved in the traced SVG, no manual masking required."
+      },
+      {
+        "title": "No signup, no watermark",
+        "body": "Convert as many files as you like without creating an account, and every download is a clean file with nothing added."
+      },
+      {
+        "title": "Runs entirely in your browser",
+        "body": "Tracing happens on your device using the Canvas API and a background worker — your images are never uploaded anywhere."
+      },
+      {
+        "title": "Built for Cricut, Silhouette & laser cutters",
+        "body": "Output is a standard path-based SVG that imports cleanly into Cricut Design Space, Silhouette Studio, and laser-cutting software."
+      }
+    ],
+    "useCaseCards": [
+      { "href": "/use-cases/cricut", "label": "Convert PNG to SVG for Cricut cutting machines" },
+      { "href": "/use-cases/laser-cutting", "label": "Prepare PNG artwork for laser cutting as SVG" },
+      { "href": "/use-cases/silhouette-vinyl-cutting", "label": "Vectorize PNGs for Silhouette vinyl cutting" },
+      { "href": "/use-cases/embroidery-digitizing", "label": "Turn PNG designs into SVGs for embroidery digitizing" }
+    ],
+    "learnMoreCards": [
+      { "href": "/guides/png-vs-svg", "label": "PNG vs SVG: what's actually different" },
+      { "href": "/guides/how-image-tracing-works", "label": "How does image tracing work?" },
+      { "href": "/guides/convert-logo-to-svg", "label": "How to convert a logo to SVG" }
+    ],
+    "faqs": [
+      {
+        "question": "Is this PNG to SVG converter really free?",
+        "answer": "Yes. Every conversion is free with no limit on the number of files, no subscription, and no watermark added to your downloads."
+      },
+      {
+        "question": "Will the SVG work in Cricut Design Space or Silhouette Studio?",
+        "answer": "Yes. The output is a standard path-based SVG file, which both Cricut Design Space and Silhouette Studio can import directly."
+      },
+      {
+        "question": "Can I control how many colors are in the traced SVG?",
+        "answer": "Yes. Full Color mode includes a color-count slider so you can simplify a photo down to a handful of flat regions or keep a richer palette."
+      },
+      {
+        "question": "Does it preserve transparent backgrounds?",
+        "answer": "Yes. If your PNG has a transparent background, that transparency is read from the alpha channel and carried through to the SVG."
+      },
+      {
+        "question": "What's the actual difference between PNG and SVG?",
+        "answer": "A PNG is a fixed grid of pixels, so it gets blurry when scaled up. An SVG stores an image as mathematical paths, so it can be resized to any dimension without losing quality."
+      },
+      {
+        "question": "Can I edit the SVG after downloading it?",
+        "answer": "Yes. Because the output is real path data, you can open it in Illustrator, Inkscape, Figma, or any vector editor and edit the shapes directly."
+      },
+      {
+        "question": "Is there a file size or file count limit?",
+        "answer": "No. You can convert as many PNG files as you like, and there's no artificial size cap — very large images will simply take longer to trace."
+      },
+      {
+        "question": "Does this work well for both logos and photographs?",
+        "answer": "Logos and icons with flat colors trace especially cleanly into just a few paths. Photographs work best in Full Color mode and produce a more stylized, poster-like vector result rather than a pixel-perfect copy."
+      },
+      {
+        "question": "Do you store or upload my images?",
+        "answer": "No. Conversion happens entirely on your device using your browser's Canvas API — your files are never sent to a server or stored anywhere."
+      },
+      {
+        "question": "What software can open the SVG files I download?",
+        "answer": "Any standard SVG file works in Adobe Illustrator, Inkscape, Figma, Affinity Designer, Cricut Design Space, Silhouette Studio, and web browsers."
+      },
+      {
+        "question": "Is this an AI-powered vectorizer?",
+        "answer": "No — it uses a deterministic tracing algorithm (color quantization and edge detection), not a machine-learning model. That means the same image and settings always produce the same result, and every setting you see is one you can actually control, rather than an opaque \"AI quality\" toggle."
+      },
+      {
+        "question": "Can I convert JPG or WebP images too, not just PNG?",
+        "answer": "This tool is focused specifically on PNG, since PNG's per-pixel transparency is central to how it handles backgrounds. If you have a JPG or WebP, converting or re-saving it as PNG first works well, especially if you don't need to preserve transparency."
+      }
+    ]
+  },
+  "tool": {
+    "dropzoneTitle": "Drag & drop PNG files here",
+    "dropzoneSubtitle": "or click to browse — multiple files supported, no size limit",
+    "browseButton": "Choose files",
+    "modeLabel": "Tracing mode",
+    "modeBw": "Black & White",
+    "modeColor": "Full Color",
+    "colorCountLabel": "Color count",
+    "detailLabel": "Detail / smoothing",
+    "transparentLabel": "Transparent background",
+    "originalLabel": "Original (PNG)",
+    "tracedLabel": "Traced (SVG)",
+    "downloadButton": "Download SVG",
+    "removeButton": "Remove",
+    "processingLabel": "Tracing…",
+    "clearAllButton": "Clear all",
+    "fileCount": "{count, plural, one {# file} other {# files}}",
+    "workerUnavailable": "Worker unavailable",
+    "couldNotReadImage": "Could not read image"
+  },
+  "guidesHub": {
+    "metaTitle": "PNG to SVG Guides",
+    "metaDescription": "In-depth guides on PNG vs SVG, how image tracing works, converting logos to SVG, editing SVGs after conversion, and raster vs vector graphics.",
+    "title": "Guides",
+    "intro": "Everything you need to know about converting between raster and vector graphics — from the basics of PNG vs SVG to hands-on steps for logos and cut files."
+  },
+  "useCasesHub": {
+    "metaTitle": "PNG to SVG Use Cases",
+    "metaDescription": "See how to convert PNG to SVG for Cricut, laser cutting, Silhouette vinyl cutting, and embroidery digitizing — with step-by-step settings for each.",
+    "title": "Use Cases",
+    "intro": "Practical, tool-specific walkthroughs for turning a PNG design into a cut- or stitch-ready SVG for the machines and software crafters use most."
+  },
+  "blogHub": {
+    "metaTitle": "Blog",
+    "metaDescription": "Tutorials, comparisons, and troubleshooting for PNG to SVG conversion, vinyl decals, icons, and vector graphics.",
+    "title": "Blog",
+    "intro": "Tutorials, comparisons, and troubleshooting for working with PNG, SVG, and vector graphics."
+  },
+  "about": {
+    "metaTitle": "About",
+    "metaDescription": "PNGtoSVG is a free, browser-based PNG to SVG converter built to make image vectorization fast, private, and accessible without signup or watermarks.",
+    "title": "About PNGtoSVG",
+    "p1": "PNGtoSVG is a free, browser-based tool that converts PNG images into real, path-based SVG vector files. It exists to make image vectorization — turning a raster image into scalable vector paths — fast, private, and available to anyone, without a paid subscription, a required account, or a watermark on the result.",
+    "p2": "Every conversion runs locally in your browser using the Canvas API and a background Web Worker. Your image is decoded, traced, and turned into an SVG entirely on your own device — it's never uploaded to a server, which is what lets us say the tool is 100% private by design rather than by policy.",
+    "p3": "We built PNGtoSVG after running into the same problem repeatedly: needing a quick, reliable way to turn a logo, sketch, or icon into a clean vector file for a cutting machine, a website, or a print project, without installing design software or uploading files to yet another account-gated service.",
+    "whoHeading": "Who Uses PNGtoSVG",
+    "whoMakersTitle": "Makers & crafters",
+    "whoMakersBody": "Preparing designs for Cricut, Silhouette, laser cutters, and embroidery digitizing software.",
+    "whoDesignersTitle": "Designers & developers",
+    "whoDesignersBody": "Turning a raster logo or icon into a scalable SVG for a website, app, or print project.",
+    "approachHeading": "Our Approach",
+    "approachP1": "We keep the tool free and unlimited because a converter that gatekeeps basic functionality behind a paywall isn't solving the problem it claims to. We keep it private because we simply don't want the liability, complexity, or user trust problem of handling anyone's image files on a server.",
+    "approachP2": "If you'd like to understand more about how the underlying conversion works, see [how image tracing works](/guides/how-image-tracing-works), or read our [privacy policy](/privacy) for the full detail on what data (if any) we collect.",
+    "ctaText": "Ready to see it in action?",
+    "ctaButton": "Try the tool free"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "How PNGtoSVG handles your data: your images are never uploaded, and we collect only minimal, aggregate site analytics.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: July 2026",
+    "sections": [
+      {
+        "heading": "Your Images Are Never Uploaded",
+        "body": "PNGtoSVG converts images entirely inside your browser using the Canvas API and a background Web Worker. The PNG file you select is read, traced, and turned into an SVG on your own device — it is never sent to our servers or any third party, and we have no ability to see, store, or access the images you convert."
+      },
+      {
+        "heading": "No Account Required",
+        "body": "You don't need to create an account or provide an email address to use the converter, so we don't collect any personal information as part of the conversion process itself."
+      },
+      {
+        "heading": "Analytics",
+        "body": "We may use privacy-respecting, aggregate analytics (such as anonymized page-view counts) to understand overall traffic and improve the site. This data does not identify you individually, and we do not use third-party advertising trackers or sell data to advertisers."
+      },
+      {
+        "heading": "Cookies",
+        "body": "We use a single local storage entry in your browser to remember your light/dark theme preference. This stays on your device and is never transmitted to us."
+      },
+      {
+        "heading": "Children's Privacy",
+        "body": "PNGtoSVG does not knowingly collect personal information from children, since the tool does not collect personal information from any user in the first place."
+      },
+      {
+        "heading": "Changes to This Policy",
+        "body": "If our data practices change, we'll update this page with a new \"last updated\" date. Since conversion happens entirely in your browser, we don't expect this policy to change often."
+      },
+      {
+        "heading": "Contact",
+        "body": "Questions about this policy can be sent to privacy@pngtosvgconverter.com."
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Terms of Service",
+    "metaDescription": "The terms governing use of the free PNGtoSVG image conversion tool and website.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: July 2026",
+    "sections": [
+      {
+        "heading": "Using the Service",
+        "body": "PNGtoSVG is provided free of charge for converting your own images from PNG to SVG. You may use it for personal, commercial, or educational purposes. You agree not to use the service in a way that disrupts it for other users or attempts to circumvent its normal operation."
+      },
+      {
+        "heading": "Your Content",
+        "body": "You retain all rights to the images you convert and the SVG files produced by the tool. Because conversion happens entirely in your browser, we never receive, store, or claim any rights to your images or the resulting output."
+      },
+      {
+        "heading": "No Warranty",
+        "body": "The service is provided \"as is,\" without warranties of any kind, express or implied. We don't guarantee that the tracing output will be suitable for every purpose or material, and we recommend reviewing any converted file before using it in a production, print, or cutting project."
+      },
+      {
+        "heading": "Limitation of Liability",
+        "body": "To the fullest extent permitted by law, PNGtoSVG is not liable for any indirect, incidental, or consequential damages arising from your use of the service, including damages related to material, time, or output from a conversion."
+      },
+      {
+        "heading": "Changes to the Service or Terms",
+        "body": "We may update these terms or the service itself from time to time. Continued use of the site after a change means you accept the updated terms."
+      },
+      {
+        "heading": "Contact",
+        "body": "Questions about these terms can be sent to support@pngtosvgconverter.com."
+      }
+    ]
+  }
+}

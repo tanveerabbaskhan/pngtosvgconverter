@@ -1,0 +1,314 @@
+{
+  "common": {
+    "home": "Home"
+  },
+  "content": {
+    "faqHeading": "Veelgestelde vragen",
+    "ctaPrefix": "Klaar om je eigen afbeelding te converteren?"
+  },
+  "nav": {
+    "tool": "Tool",
+    "guides": "Gidsen",
+    "useCases": "Toepassingen",
+    "blog": "Blog",
+    "about": "Over ons",
+    "skipToContent": "Naar inhoud springen",
+    "toggleTheme": "Donkere modus in-/uitschakelen",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "language": "Taal"
+  },
+  "footer": {
+    "tagline": "Gratis, privé en browsergebaseerde PNG-naar-SVG-conversie.",
+    "productHeading": "Product",
+    "guidesHeading": "Gidsen",
+    "useCasesHeading": "Toepassingen",
+    "companyHeading": "Bedrijf",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "home": {
+    "metaTitle": "Gratis PNG naar SVG Converter — Zet afbeeldingen online om naar vector",
+    "metaDescription": "Converteer PNG gratis naar SVG, direct in je browser. Echte vectorisatie met Zwart-wit- en Volledige kleur-modi, ondersteuning voor transparantie, geen account nodig, geen watermerk, niets wordt geüpload.",
+    "schemaDescription": "Gratis, privé en browsergebaseerde tool die PNG-afbeeldingen omzet naar SVG-vectorbestanden op basis van paden.",
+    "h1": "Gratis PNG naar SVG Converter — Zet afbeeldingen online om naar vector",
+    "subtitle": "Sleep een PNG naar binnen en krijg een schone, bewerkbare SVG terug, opgebouwd uit paden — volledig getraced in je browser. Er wordt nooit iets geüpload.",
+    "badgeFree": "Voor altijd gratis",
+    "badgePrivate": "100% privé",
+    "badgeNoSignup": "Geen account nodig",
+    "badgeNoWatermark": "Geen watermerk",
+    "ctaTryTool": "Probeer de tool gratis",
+    "whatIsHeading": "Wat is vectorisatie van afbeeldingen?",
+    "whatIsBody": "Een PNG is een raster van gekleurde pixels — zoom ver genoeg in en je ziet de blokjes. Een SVG werkt anders: het slaat een afbeelding op als een set wiskundige paden en vormen, waardoor het naar elke grootte kan schalen, van favicon tot billboard, zonder ooit wazig of pixelig te worden. Vectorisatie (ook wel \"image tracing\" genoemd) is het proces waarbij een rasterafbeelding zoals een PNG wordt geanalyseerd en herbouwd als die schaalbare vectorpaden. Precies dat doet deze tool, direct en volledig op je eigen apparaat.",
+    "pngVsSvgHeading": "PNG versus SVG in het kort",
+    "pngVsSvgIntro": "Kort gezegd: een PNG is vastgezet op de resolutie waarmee het is opgeslagen, terwijl een SVG zichzelf op elke grootte perfect opnieuw tekent. Zo verhouden de twee formaten zich écht tot elkaar.",
+    "comparisonTable": {
+      "headers": ["", "PNG", "SVG"],
+      "rows": [
+        ["Bestaat uit", "Pixels", "Paden & vormen"],
+        ["Schalen", "Wordt wazig boven de originele grootte", "Schaalt naar elke grootte zonder kwaliteitsverlies"],
+        ["Typische bestandsgrootte (icoon/logo)", "Groter, één maat per keer", "Kleiner, één bestand voor elke maat"],
+        ["Vormen bewerkbaar?", "Nee — alleen pixels", "Ja — in Illustrator, Inkscape, Figma"],
+        ["Het beste voor", "Foto's, texturen", "Logo's, iconen, lijntekeningen, snijbestanden"]
+      ]
+    },
+    "bestForHeading": "Het beste geschikt voor deze soorten afbeeldingen",
+    "bestForLogos": "Logo's & iconen",
+    "bestForLogosBody": "Effen kleuren en scherpe randen worden getraced naar een handvol nette, perfect schaalbare paden — ideaal voor merklogo's, app-iconen en badges.",
+    "bestForPhotos": "Foto's",
+    "bestForPhotosBody": "De modus Volledige kleur behoudt het kleurenpalet van je foto als getracete vlakken, handig voor gestileerde, poster-achtige vectorkunst op basis van een foto.",
+    "bestForSketches": "Schetsen & lijntekeningen",
+    "bestForSketchesBody": "De modus Zwart-wit zet potloodschetsen en lijntekeningen om in één schoon pad — ideaal voor lasersnijden en vinyl.",
+    "whoUsesHeading": "Wie gebruikt deze PNG naar SVG converter",
+    "whoUses": [
+      {
+        "title": "Designers & developers",
+        "body": "Zetten een raster-logo, icoon of mockup-asset om naar een schaalbare SVG voor een website, app of designsysteem — zonder de browser te verlaten."
+      },
+      {
+        "title": "Makers & knutselaars",
+        "body": "Bereiden ontwerpen voor op Cricut, Silhouette, lasersnijders en borduurdigitalisatiesoftware, waar een echt snijpad belangrijker is dan een mooi plaatje."
+      },
+      {
+        "title": "Kleine ondernemers",
+        "body": "Zetten een bestaand PNG-logo om naar SVG voor print, bewegwijzering of merchandise, zonder een designer te betalen om het opnieuw te tekenen."
+      },
+      {
+        "title": "Studenten & hobbyisten",
+        "body": "Leren hoe vectorafbeeldingen werken, of hebben gewoon een eenmalige conversie nodig voor een schoolproject, zonder designsoftware te installeren."
+      }
+    ],
+    "whyHeading": "Waarom wij anders zijn",
+    "formatsHeading": "Ondersteunde formaten & waar je SVG werkt",
+    "formatsBody": "Deze tool richt zich bewust op één taak: PNG erin, echte padgebaseerde SVG eruit. PNG is hier het belangrijkste formaat omdat het betrouwbaar transparantie per pixel behoudt, die de tracer rechtstreeks uit je bestand leest. Elke SVG die je downloadt is een standaard, spec-conform vectorbestand — geen eigen formaat — dus het opent overal hetzelfde waar een browser of designtool SVG verwacht.",
+    "formatsList": [
+      "Vectoreditors: Adobe Illustrator, Inkscape, Affinity Designer, Figma",
+      "Snijsoftware: Cricut Design Space, Silhouette Studio",
+      "Lasersnijsoftware: LightBurn, LaserGRBL",
+      "Borduurdigitalisatiesoftware, als startcontour",
+      "Elke moderne webbrowser, als <img>, achtergrond of inline element"
+    ],
+    "howHeading": "Hoe zet je PNG om naar SVG",
+    "howStep1Title": "Upload je PNG",
+    "howStep1Body": "Sleep een of meerdere PNG-bestanden naar de tool, of klik om te bladeren. Er is geen limiet op bestandsgrootte en niets verlaat je apparaat.",
+    "howStep2Title": "Kies je instellingen",
+    "howStep2Body": "Kies Zwart-wit- of Volledige kleur-tracing, pas het aantal kleuren en het detailniveau aan, en bepaal of de achtergrond transparant moet blijven.",
+    "howStep3Title": "Bekijk het voorbeeld en download",
+    "howStep3Body": "Bekijk de live voor/na-preview en download vervolgens een echt SVG-bestand op basis van paden, klaar om te openen in elke vectoreditor.",
+    "useCasesHeading": "Populaire toepassingen",
+    "learnMoreHeading": "Meer weten",
+    "faqHeading": "Veelgestelde vragen",
+    "usps": [
+      {
+        "title": "Echte vectorisatie, geen wikkel om je bestand",
+        "body": "Elke SVG die we opleveren bestaat uit echte <path>-elementen, getraced vanuit je afbeelding — nooit een rasterafbeelding die als Base64 gecodeerd en in een SVG-tag geplakt is."
+      },
+      {
+        "title": "Kleuren behouden, op jouw manier",
+        "body": "De modus Volledige kleur behoudt je originele kleurenpalet; pas het aantal kleuren aan om detailgetrouwheid af te wegen tegen bestandsgrootte en padcomplexiteit."
+      },
+      {
+        "title": "Transparante achtergronden blijven behouden",
+        "body": "PNG-alphatransparantie wordt direct uit je bronbestand gelezen en behouden in de getracete SVG, zonder handmatig maskeren."
+      },
+      {
+        "title": "Geen account nodig, geen watermerk",
+        "body": "Converteer zoveel bestanden als je wilt zonder een account aan te maken, en elke download is een schoon bestand zonder toevoegingen."
+      },
+      {
+        "title": "Draait volledig in je browser",
+        "body": "Tracing gebeurt op je eigen apparaat met de Canvas API en een achtergrondworker — je afbeeldingen worden nergens geüpload."
+      },
+      {
+        "title": "Gebouwd voor Cricut, Silhouette & lasersnijders",
+        "body": "De output is een standaard SVG op basis van paden die probleemloos importeert in Cricut Design Space, Silhouette Studio en lasersnijsoftware."
+      }
+    ],
+    "useCaseCards": [
+      { "href": "/use-cases/cricut", "label": "Converteer PNG naar SVG voor Cricut-snijmachines" },
+      { "href": "/use-cases/laser-cutting", "label": "Maak PNG-ontwerpen klaar voor lasersnijden als SVG" },
+      { "href": "/use-cases/silhouette-vinyl-cutting", "label": "Vectoriseer PNG's voor Silhouette-vinylsnijden" },
+      { "href": "/use-cases/embroidery-digitizing", "label": "Zet PNG-ontwerpen om naar SVG's voor borduurdigitalisatie" }
+    ],
+    "learnMoreCards": [
+      { "href": "/guides/png-vs-svg", "label": "PNG vs SVG: wat is het echte verschil" },
+      { "href": "/guides/how-image-tracing-works", "label": "Hoe werkt image tracing?" },
+      { "href": "/guides/convert-logo-to-svg", "label": "Hoe zet je een logo om naar SVG" }
+    ],
+    "faqs": [
+      {
+        "question": "Is deze PNG-naar-SVG-converter echt gratis?",
+        "answer": "Ja. Elke conversie is gratis, zonder limiet op het aantal bestanden, zonder abonnement en zonder watermerk op je downloads."
+      },
+      {
+        "question": "Werkt de SVG in Cricut Design Space of Silhouette Studio?",
+        "answer": "Ja. De output is een standaard SVG-bestand op basis van paden, dat zowel Cricut Design Space als Silhouette Studio direct kan importeren."
+      },
+      {
+        "question": "Kan ik bepalen hoeveel kleuren de getracete SVG bevat?",
+        "answer": "Ja. De modus Volledige kleur heeft een schuifregelaar voor het aantal kleuren, zodat je een foto kunt vereenvoudigen tot een handvol effen vlakken of juist een rijker palet kunt behouden."
+      },
+      {
+        "question": "Blijft een transparante achtergrond behouden?",
+        "answer": "Ja. Als je PNG een transparante achtergrond heeft, wordt die transparantie uit het alphakanaal gelezen en doorgevoerd in de SVG."
+      },
+      {
+        "question": "Wat is het echte verschil tussen PNG en SVG?",
+        "answer": "Een PNG is een vast raster van pixels, dat wazig wordt als je het opschaalt. Een SVG slaat een afbeelding op als wiskundige paden, waardoor je hem naar elke afmeting kunt aanpassen zonder kwaliteitsverlies."
+      },
+      {
+        "question": "Kan ik de SVG na het downloaden bewerken?",
+        "answer": "Ja. Omdat de output echte paddata is, kun je hem openen in Illustrator, Inkscape, Figma of elke andere vectoreditor en de vormen direct bewerken."
+      },
+      {
+        "question": "Is er een limiet op bestandsgrootte of aantal bestanden?",
+        "answer": "Nee. Je kunt zoveel PNG-bestanden converteren als je wilt, en er is geen kunstmatige limiet op bestandsgrootte — heel grote afbeeldingen duren alleen langer om te tracen."
+      },
+      {
+        "question": "Werkt dit goed voor zowel logo's als foto's?",
+        "answer": "Logo's en iconen met effen kleuren worden bijzonder schoon getraced naar slechts een paar paden. Foto's werken het beste in de modus Volledige kleur en leveren een meer gestileerd, poster-achtig vectorresultaat op, in plaats van een pixelperfecte kopie."
+      },
+      {
+        "question": "Bewaren of uploaden jullie mijn afbeeldingen?",
+        "answer": "Nee. De conversie gebeurt volledig op je eigen apparaat met de Canvas API van je browser — je bestanden worden nooit naar een server verstuurd of ergens opgeslagen."
+      },
+      {
+        "question": "Met welke software kan ik de gedownloade SVG-bestanden openen?",
+        "answer": "Elk standaard SVG-bestand werkt in Adobe Illustrator, Inkscape, Figma, Affinity Designer, Cricut Design Space, Silhouette Studio en webbrowsers."
+      },
+      {
+        "question": "Is dit een AI-gestuurde vectorizer?",
+        "answer": "Nee — het gebruikt een deterministisch traceeralgoritme (kleurquantisatie en randdetectie), geen machine-learning-model. Dat betekent dat dezelfde afbeelding en instellingen altijd hetzelfde resultaat opleveren, en dat elke instelling die je ziet er een is die je ook echt zelf regelt, in plaats van een ondoorzichtige \"AI-kwaliteit\"-schakelaar."
+      },
+      {
+        "question": "Kan ik ook JPG- of WebP-afbeeldingen converteren, niet alleen PNG?",
+        "answer": "Deze tool richt zich specifiek op PNG, omdat de transparantie per pixel van PNG centraal staat in hoe achtergronden worden verwerkt. Heb je een JPG of WebP, dan werkt het goed om deze eerst als PNG op te slaan, zeker als je geen transparantie hoeft te behouden."
+      }
+    ]
+  },
+  "tool": {
+    "dropzoneTitle": "Sleep PNG-bestanden hierheen",
+    "dropzoneSubtitle": "of klik om te bladeren — meerdere bestanden mogelijk, geen groottelimiet",
+    "browseButton": "Bestanden kiezen",
+    "modeLabel": "Tracing-modus",
+    "modeBw": "Zwart-wit",
+    "modeColor": "Volledige kleur",
+    "colorCountLabel": "Aantal kleuren",
+    "detailLabel": "Detail / gladstrijken",
+    "transparentLabel": "Transparante achtergrond",
+    "originalLabel": "Origineel (PNG)",
+    "tracedLabel": "Getraced (SVG)",
+    "downloadButton": "SVG downloaden",
+    "removeButton": "Verwijderen",
+    "processingLabel": "Bezig met tracen…",
+    "clearAllButton": "Alles wissen",
+    "fileCount": "{count, plural, one {# bestand} other {# bestanden}}",
+    "workerUnavailable": "Worker niet beschikbaar",
+    "couldNotReadImage": "Kan afbeelding niet lezen"
+  },
+  "guidesHub": {
+    "metaTitle": "PNG naar SVG Gidsen",
+    "metaDescription": "Uitgebreide gidsen over PNG versus SVG, hoe image tracing werkt, logo's omzetten naar SVG, SVG's bewerken na conversie, en raster versus vectorafbeeldingen.",
+    "title": "Gidsen",
+    "intro": "Alles wat je moet weten over het converteren tussen raster- en vectorafbeeldingen — van de basis van PNG versus SVG tot praktische stappen voor logo's en snijbestanden."
+  },
+  "useCasesHub": {
+    "metaTitle": "PNG naar SVG Toepassingen",
+    "metaDescription": "Bekijk hoe je PNG omzet naar SVG voor Cricut, lasersnijden, Silhouette-vinylsnijden en borduurdigitalisatie — met stap-voor-stap instellingen voor elk.",
+    "title": "Toepassingen",
+    "intro": "Praktische, toolspecifieke handleidingen om van een PNG-ontwerp een snij- of borduurklare SVG te maken voor de machines en software die makers het meest gebruiken."
+  },
+  "blogHub": {
+    "metaTitle": "Blog",
+    "metaDescription": "Tutorials, vergelijkingen en probleemoplossing voor PNG-naar-SVG-conversie, vinyl decals, iconen en vectorafbeeldingen.",
+    "title": "Blog",
+    "intro": "Tutorials, vergelijkingen en probleemoplossing voor het werken met PNG, SVG en vectorafbeeldingen."
+  },
+  "about": {
+    "metaTitle": "Over ons",
+    "metaDescription": "PNGtoSVG is een gratis, browsergebaseerde PNG-naar-SVG-converter, gemaakt om vectorisatie van afbeeldingen snel, privé en toegankelijk te maken zonder account of watermerken.",
+    "title": "Over PNGtoSVG",
+    "p1": "PNGtoSVG is een gratis, browsergebaseerde tool die PNG-afbeeldingen omzet naar echte SVG-vectorbestanden op basis van paden. De tool bestaat om vectorisatie — het omzetten van een rasterafbeelding naar schaalbare vectorpaden — snel, privé en voor iedereen beschikbaar te maken, zonder betaald abonnement, verplicht account of watermerk op het resultaat.",
+    "p2": "Elke conversie draait lokaal in je browser met de Canvas API en een Web Worker op de achtergrond. Je afbeelding wordt gedecodeerd, getraced en omgezet naar een SVG volledig op je eigen apparaat — hij wordt nooit geüpload naar een server, en juist daardoor kunnen we zeggen dat de tool 100% privé is door ontwerp, niet slechts door beleid.",
+    "p3": "We hebben PNGtoSVG gebouwd nadat we steeds tegen hetzelfde probleem aanliepen: snel en betrouwbaar een logo, schets of icoon omzetten naar een schoon vectorbestand voor een snijmachine, website of drukwerkproject, zonder ontwerpsoftware te installeren of bestanden te uploaden naar nog een dienst waarvoor je een account nodig hebt.",
+    "whoHeading": "Wie gebruikt PNGtoSVG",
+    "whoMakersTitle": "Makers & hobbyisten",
+    "whoMakersBody": "Ontwerpen voorbereiden voor Cricut, Silhouette, lasersnijders en borduurdigitalisatiesoftware.",
+    "whoDesignersTitle": "Ontwerpers & ontwikkelaars",
+    "whoDesignersBody": "Een rasterlogo of -icoon omzetten naar een schaalbare SVG voor een website, app of drukwerkproject.",
+    "approachHeading": "Onze aanpak",
+    "approachP1": "We houden de tool gratis en onbeperkt, omdat een converter die basisfunctionaliteit achter een betaalmuur verstopt het probleem waarvoor hij bedoeld is niet echt oplost. We houden hem privé omdat we simpelweg geen zin hebben in de aansprakelijkheid, complexiteit of het vertrouwensprobleem van het verwerken van iemands afbeeldingsbestanden op een server.",
+    "approachP2": "Wil je meer weten over hoe de onderliggende conversie werkt, bekijk dan [hoe image tracing werkt](/guides/how-image-tracing-works), of lees ons [privacybeleid](/privacy) voor alle details over welke gegevens (indien van toepassing) we verzamelen.",
+    "ctaText": "Klaar om het in actie te zien?",
+    "ctaButton": "Probeer de tool gratis"
+  },
+  "privacy": {
+    "metaTitle": "Privacybeleid",
+    "metaDescription": "Hoe PNGtoSVG omgaat met je gegevens: je afbeeldingen worden nooit geüpload, en we verzamelen alleen minimale, geaggregeerde site-analyses.",
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: juli 2026",
+    "sections": [
+      {
+        "heading": "Je afbeeldingen worden nooit geüpload",
+        "body": "PNGtoSVG converteert afbeeldingen volledig binnen je browser met de Canvas API en een Web Worker op de achtergrond. Het PNG-bestand dat je selecteert, wordt gelezen, getraced en omgezet naar een SVG op je eigen apparaat — het wordt nooit naar onze servers of derden verstuurd, en wij hebben geen enkele mogelijkheid om de afbeeldingen die je converteert te zien, op te slaan of te benaderen."
+      },
+      {
+        "heading": "Geen account nodig",
+        "body": "Je hoeft geen account aan te maken of een e-mailadres op te geven om de converter te gebruiken, dus we verzamelen geen persoonlijke gegevens als onderdeel van het conversieproces zelf."
+      },
+      {
+        "heading": "Analyse",
+        "body": "We kunnen privacyvriendelijke, geaggregeerde analyses gebruiken (zoals geanonimiseerde paginaweergaven) om het totale verkeer te begrijpen en de site te verbeteren. Deze gegevens identificeren jou niet persoonlijk, en we gebruiken geen advertentietrackers van derden en verkopen geen gegevens aan adverteerders."
+      },
+      {
+        "heading": "Cookies",
+        "body": "We gebruiken één local storage-item in je browser om je voorkeur voor licht/donker thema te onthouden. Dit blijft op je eigen apparaat en wordt nooit naar ons verzonden."
+      },
+      {
+        "heading": "Privacy van kinderen",
+        "body": "PNGtoSVG verzamelt niet bewust persoonlijke gegevens van kinderen, aangezien de tool om te beginnen van geen enkele gebruiker persoonlijke gegevens verzamelt."
+      },
+      {
+        "heading": "Wijzigingen in dit beleid",
+        "body": "Als onze gegevenspraktijken veranderen, werken we deze pagina bij met een nieuwe datum \"laatst bijgewerkt\". Omdat conversie volledig in je browser plaatsvindt, verwachten we niet dat dit beleid vaak verandert."
+      },
+      {
+        "heading": "Contact",
+        "body": "Vragen over dit beleid kun je sturen naar privacy@pngtosvgconverter.com."
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Servicevoorwaarden",
+    "metaDescription": "De voorwaarden voor het gebruik van de gratis PNGtoSVG-afbeeldingsconversietool en -website.",
+    "title": "Servicevoorwaarden",
+    "lastUpdated": "Laatst bijgewerkt: juli 2026",
+    "sections": [
+      {
+        "heading": "Gebruik van de dienst",
+        "body": "PNGtoSVG wordt gratis aangeboden voor het converteren van je eigen afbeeldingen van PNG naar SVG. Je mag de tool gebruiken voor persoonlijke, commerciële of educatieve doeleinden. Je stemt ermee in de dienst niet zo te gebruiken dat het deze verstoort voor andere gebruikers, en niet te proberen de normale werking ervan te omzeilen."
+      },
+      {
+        "heading": "Jouw content",
+        "body": "Je behoudt alle rechten op de afbeeldingen die je converteert en op de SVG-bestanden die de tool produceert. Omdat conversie volledig in je browser plaatsvindt, ontvangen, bewaren of claimen wij nooit enig recht op je afbeeldingen of het resulterende bestand."
+      },
+      {
+        "heading": "Geen garantie",
+        "body": "De dienst wordt \"zoals hij is\" aangeboden, zonder enige garantie, expliciet of impliciet. We garanderen niet dat de tracing-output geschikt is voor elk doel of materiaal, en we raden aan elk geconverteerd bestand te controleren voordat je het gebruikt in een productie-, druk- of snijproject."
+      },
+      {
+        "heading": "Beperking van aansprakelijkheid",
+        "body": "Voor zover wettelijk toegestaan is PNGtoSVG niet aansprakelijk voor enige indirecte, incidentele of gevolgschade die voortvloeit uit je gebruik van de dienst, inclusief schade gerelateerd aan materiaal, tijd of de output van een conversie."
+      },
+      {
+        "heading": "Wijzigingen in de dienst of voorwaarden",
+        "body": "We kunnen deze voorwaarden of de dienst zelf van tijd tot tijd bijwerken. Als je de site blijft gebruiken na een wijziging, betekent dit dat je de bijgewerkte voorwaarden accepteert."
+      },
+      {
+        "heading": "Contact",
+        "body": "Vragen over deze voorwaarden kun je sturen naar support@pngtosvgconverter.com."
+      }
+    ]
+  }
+}
