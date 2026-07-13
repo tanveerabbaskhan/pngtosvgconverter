@@ -70,6 +70,25 @@ export function buildMetadata({
   };
 }
 
+/** The dynamically-generated OG image URL for a locale (1200x630, next/og). */
+export function ogImageUrl(locale: Locale): string {
+  return `${SITE_URL}/${locale}/opengraph-image`;
+}
+
+/** ItemList schema for a hub/listing page (guides, use-cases, blog). */
+export function buildItemListSchema(items: { name: string; path: string }[], locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: localizedUrl(item.path, locale),
+    })),
+  };
+}
+
 export type BreadcrumbEntry = { label: string; path: string };
 
 export function buildBreadcrumbSchema(items: BreadcrumbEntry[], locale: Locale) {

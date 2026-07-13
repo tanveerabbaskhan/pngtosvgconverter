@@ -3,9 +3,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getUseCaseList } from "@/lib/content/useCases";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, buildItemListSchema } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
+import { SchemaScript } from "@/components/ui/SchemaScript";
 
 export async function generateMetadata({
   params,
@@ -32,9 +33,14 @@ export default async function UseCasesHubPage({
   const t = await getTranslations("useCasesHub");
   const tCommon = await getTranslations("common");
   const useCaseList = getUseCaseList(locale);
+  const itemListSchema = buildItemListSchema(
+    useCaseList.map((useCase) => ({ name: useCase.h1, path: `/${useCase.slug}` })),
+    locale,
+  );
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+      <SchemaScript schema={itemListSchema} />
       <Breadcrumbs
         items={[{ label: tCommon("home"), path: "/" }, { label: t("title"), path: "/use-cases" }]}
         locale={locale}

@@ -7,7 +7,7 @@ import { RelatedLinks } from "@/components/ui/RelatedLinks";
 import { Button } from "@/components/ui/Button";
 import { renderInline } from "@/lib/content/inline";
 import { pickCtaAnchor } from "@/lib/content/ctaAnchors";
-import { localizedUrl } from "@/lib/seo";
+import { localizedUrl, ogImageUrl, SITE_NAME } from "@/lib/seo";
 import type { ContentBlock, ContentPage } from "@/lib/content/types";
 import type { BreadcrumbEntry } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
@@ -102,6 +102,23 @@ function buildFaqSchema(page: ContentPage) {
   };
 }
 
+function buildBlogPostingSchema(page: ContentPage, locale: Locale) {
+  if (!page.publishedAt) return null;
+  const url = localizedUrl(`/${page.slug}`, locale);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: page.h1,
+    description: page.metaDescription,
+    datePublished: page.publishedAt,
+    dateModified: page.publishedAt,
+    image: ogImageUrl(locale),
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: { "@type": "Organization", name: SITE_NAME },
+    publisher: { "@type": "Organization", name: SITE_NAME },
+  };
+}
+
 function buildHowToSchema(page: ContentPage, locale: Locale) {
   if (!page.howTo) return null;
   return {
@@ -129,12 +146,14 @@ export async function ContentTemplate({
   const t = await getTranslations("content");
   const faqSchema = buildFaqSchema(page);
   const howToSchema = buildHowToSchema(page, locale);
+  const blogPostingSchema = buildBlogPostingSchema(page, locale);
   const ctaAnchor = pickCtaAnchor(page.slug);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       {faqSchema && <SchemaScript schema={faqSchema} />}
       {howToSchema && <SchemaScript schema={howToSchema} />}
+      {blogPostingSchema && <SchemaScript schema={blogPostingSchema} />}
 
       <Breadcrumbs items={breadcrumbs} locale={locale} />
 

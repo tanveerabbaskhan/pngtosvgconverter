@@ -3,9 +3,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getBlogPostList } from "@/lib/content/blogPosts";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, buildItemListSchema } from "@/lib/seo";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Card } from "@/components/ui/Card";
+import { SchemaScript } from "@/components/ui/SchemaScript";
 
 // ISR: the blog hub re-checks for new/updated posts periodically
 // rather than only at build time, per the brief's Section 1 requirement.
@@ -36,9 +37,14 @@ export default async function BlogHubPage({
   const t = await getTranslations("blogHub");
   const tCommon = await getTranslations("common");
   const blogPostList = getBlogPostList(locale);
+  const itemListSchema = buildItemListSchema(
+    blogPostList.map((post) => ({ name: post.h1, path: `/${post.slug}` })),
+    locale,
+  );
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+      <SchemaScript schema={itemListSchema} />
       <Breadcrumbs
         items={[{ label: tCommon("home"), path: "/" }, { label: t("title"), path: "/blog" }]}
         locale={locale}
