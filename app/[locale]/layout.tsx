@@ -50,6 +50,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "tDdV_tWkrT7MCpfVbsm9ktjtIteb48PW07SSIVzVp8c",
+    other: {
+      "google-adsense-account": "ca-pub-7770994681303453",
+    },
   },
 };
 
@@ -69,6 +72,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <head>
+        <meta name="google-adsense-account" content="ca-pub-7770994681303453" />
         <ThemeScript />
         <SchemaScript schema={buildOrganizationSchema()} />
         <SchemaScript schema={buildWebSiteSchema(locale)} />
