@@ -84,6 +84,12 @@ export default async function LocaleLayout({
             gtag('config', 'G-3YXTY34BXW');
           `}
         </Script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7770994681303453"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="flex min-h-full flex-col bg-bg text-text">
         <NextIntlClientProvider>
