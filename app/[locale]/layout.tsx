@@ -83,17 +83,17 @@ export default async function LocaleLayout({
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments);} 
             gtag('js', new Date());
             gtag('config', 'G-3YXTY34BXW');
           `}
         </Script>
-        <Script
+        {/* Google AdSense: server-rendered script in head for verification */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7770994681303453"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
       </head>
       <body className="flex min-h-full flex-col bg-bg text-text">
         <NextIntlClientProvider>
