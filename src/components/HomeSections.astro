@@ -1,0 +1,62 @@
+---
+// Homepage content: table of contents, how it works, conversion process, chart + tables + features, FAQ.
+// Text comes from the locale dictionary (o.T); the illustrations are generated SVG strings from the page-data helper.
+const { o, d } = Astro.props;
+const T = o.T;
+---
+<nav class="sx-toc" aria-label={T.nav.toc}><div class="wrap"><span>{T.nav.toc}</span><a href="#how-it-works">{T.toc.how}</a><a href="#conversion-process">{T.toc.proc}</a><a href="#conversion-chart">{T.toc.chart}</a><a href="#faq">{T.toc.faq}</a><a href="#all">{T.toc.all}</a></div></nav>
+
+<section class="block sx" id="how-it-works" aria-labelledby="h-how"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{T.how.eyebrow}</p><h2 class="title" id="h-how">{T.how.title}</h2>
+  <p class="sx-def" set:html={T.how.def}></p></header>
+  <figure class="sx-fig" aria-labelledby="fc-pipe">
+    <ol class="sx-pipe">{T.how.stages.map(([h, desc, tech], i) => (
+      <li class="sx-stage"><div class="sx-art" set:html={d.stageArt[i]}></div><span class="sx-n" aria-hidden="true">{i + 1}</span><h3>{h}</h3><p>{desc}</p><span class="sx-tech">{tech}</span></li>
+    ))}</ol>
+    <figcaption id="fc-pipe">{T.how.cap}</figcaption>
+  </figure>
+  <div class="sx-split">
+    <figure class="sx-fig sx-card" aria-labelledby="fc-priv"><h3>{T.how.privTitle}</h3><Fragment set:html={d.privacy} /><figcaption id="fc-priv">{T.how.privCap}</figcaption></figure>
+    <div class="sx-card"><h3>{T.how.whyTitle}</h3>
+      <dl class="sx-dl">{T.how.why.map(([dt, dd]) => <div><dt>{dt}</dt><dd>{dd}</dd></div>)}</dl></div>
+  </div>
+</div></section>
+
+<section class="block sx" id="conversion-process" aria-labelledby="h-proc"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{T.proc.eyebrow}</p><h2 class="title" id="h-proc">{T.proc.title}</h2>
+  <p class="sx-def">{T.proc.def}</p></header>
+  <ol class="sx-proc">{T.proc.steps.map(([h, desc, tip], i) => (
+    <li><div class="sx-pn" aria-hidden="true">{i + 1}</div><div class="sx-pbody"><h3>{h}</h3><p>{desc}</p><p class="sx-tip"><strong>{T.proc.tipLabel}</strong> {tip}</p></div><div class="sx-pmock" set:html={d.mocks[i]}></div></li>
+  ))}</ol>
+  <p class="sx-after"><a class="btn primary lg" href="#converter">{T.proc.cta}</a></p>
+</div></section>
+
+<section class="block sx" id="conversion-chart" aria-labelledby="h-chart"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{T.chart.eyebrow}</p><h2 class="title" id="h-chart">{T.chart.title}</h2>
+  <p class="sx-def">{T.chart.def}</p></header>
+  <div class="sx-split sx-top">
+    <figure class="sx-fig sx-card" aria-labelledby="fc-chart"><h3>{T.chart.barsTitle}</h3><Fragment set:html={d.chart} /><figcaption id="fc-chart">{T.chart.barsCap}</figcaption></figure>
+    <div class="sx-card"><h3>{T.chart.quickTitle}</h3><ul class="sx-checks">{T.chart.quick.map(([s, r]) => <li><strong>{s}</strong> {r}</li>)}</ul><p class="sx-note">{T.chart.note}</p></div>
+  </div>
+  <div class="sx-tblwrap"><table class="sx-tbl"><caption>{T.chart.t1.cap}</caption><thead><tr>{T.chart.t1.cols.map((c) => <th scope="col">{c}</th>)}</tr></thead><tbody>
+    {d.rows.map((r) => <tr><th scope="row">{r.head}</th><td>{r.second}</td>{r.cells.map((c, j) => <td class={j === 4 ? 'rt' : undefined}>{c}</td>)}</tr>)}
+  </tbody></table></div>
+  <div class="sx-tblwrap"><table class="sx-tbl sx-cmp"><caption>{T.chart.t2.cap}</caption><thead><tr>{T.chart.t2.cols.map((c) => <th scope="col">{c}</th>)}</tr></thead><tbody>
+    {T.chart.t2.rows.map((r) => <tr><th scope="row">{r[0]}</th><td>{r[1]}</td><td>{r[2]}</td></tr>)}
+  </tbody></table></div>
+  <h3 class="sx-sub" id="h-feat">{T.chart.featTitle}</h3>
+  <ul class="sx-fgrid" aria-labelledby="h-feat">{T.chart.feats.map(([h, desc], i) => <li><div class="ic" set:html={d.featIcons[i]}></div><h4>{h}</h4><p>{desc}</p></li>)}</ul>
+</div></section>
+
+<section class="block sx" id="faq" aria-labelledby="h-faq"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{T.faq.eyebrow}</p><h2 class="title" id="h-faq">{T.faq.title}</h2>
+  <p class="sx-def">{d.faqDef}</p></header>
+  <div class="sx-faq">{d.faq.map(([g, qs], gi) => (
+    <section class="sx-fg" aria-labelledby={'fg' + gi}><h3 class="sx-fgh" id={'fg' + gi}>{g}</h3>
+      {qs.map(([q, a], qi) => (
+        <details class="sx-q" open={gi === 0 && qi === 0 ? true : undefined}><summary><h4>{q}</h4></summary><div class="sx-a"><p set:html={a}></p></div></details>
+      ))}
+    </section>
+  ))}</div>
+  <div class="cta"><h3>{T.faq.ctaTitle}</h3><p>{T.faq.ctaText}</p><a class="btn primary lg" href="#converter" id="ctaBtn">{T.faq.ctaBtn}</a></div>
+</div></section>

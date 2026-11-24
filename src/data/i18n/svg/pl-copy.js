@@ -1,0 +1,21 @@
+// [lead, meta description <=160] for the 18 SVG tool pages (order: see fr-copy.js)
+module.exports=[
+ ['Zamień SVG na obraz PNG w dowolnym rozmiarze, z przezroczystym tłem i podglądem na żywo, bez opuszczania przeglądarki.','Darmowy konwerter SVG na PNG: wybierz rozmiar i tło i pobierz ostry obraz. Bez przesyłania plików, wszystko w przeglądarce.'],
+ ['Zamień SVG na obraz JPG z wybranym tłem i jakością, z podglądem na żywo i bez przesyłania pliku.','Darmowy konwerter SVG na JPG: ustaw rozmiar, kolor tła i jakość i pobierz wynik. Wszystko w Twojej przeglądarce.'],
+ ['Zamień SVG na lekki obraz WebP z opcjonalną przezroczystością i kontrolą jakości, bezpośrednio w przeglądarce.','Darmowy konwerter SVG na WebP: wybierz rozmiar i jakość z podglądem na żywo i pobierz lekki obraz. Bez przesyłania plików.'],
+ ['Zamień SVG na dokument PDF z wybranym rozmiarem strony i marginesami, bez przesyłania czegokolwiek.','Darmowy konwerter SVG na PDF: wybierz rozmiar strony i margines, sprawdź podgląd i pobierz PDF. Wszystko w przeglądarce.'],
+ ['Zamień SVG na ikonę ICO z kilkoma rozmiarami, gotową jako favicon, bezpośrednio w przeglądarce.','Darmowy konwerter SVG na ICO: wygeneruj favicon w potrzebnych rozmiarach i od razu pobierz. Bez przesyłania plików.'],
+ ['Skompresuj SVG, aby zmniejszyć plik bez zmiany wyglądu: wybierz poziom i porównuj rozmiary na żywo.','Darmowy kompresor SVG: zmniejsz pliki SVG z podglądem na żywo i porównaniem przed i po. Wszystko w przeglądarce.'],
+ ['Zoptymalizuj kod SVG: usuń zbędne elementy, skróć kolory, zaokrąglij liczby i od razu zobacz oszczędność.','Darmowy optymalizator SVG: oczyszczaj i zmniejszaj SVG z pełną kontrolą każdego kroku i podglądem na żywo, bez przesyłania plików.'],
+ ['Zmień rozmiar SVG na dokładne wymiary bez utraty jakości, z blokadą proporcji i szybkimi rozmiarami.','Darmowa zmiana rozmiaru SVG: ustaw szerokość i wysokość, zachowaj proporcje i pobierz dopasowany SVG. Wszystko w przeglądarce.'],
+ ['Przytnij SVG, dopasowując widoczny obszar, lub automatycznie do zawartości, z podglądem wyniku na żywo.','Darmowe przycinanie SVG: wyznacz obszar lub dopasuj go do zawartości i pobierz przycięty SVG. Bez przesyłania plików.'],
+ ['Zmień kolory SVG: zamień każdy kolor, przesuń odcień, odwróć lub przejdź na skalę szarości z podglądem na żywo.','Darmowy zmieniacz kolorów SVG: edytuj każdy kolor, przesuń odcień lub odwróć paletę i pobierz wynik. W przeglądarce.'],
+ ['Usuń tło z SVG: kształty tła są wykrywane i usuwane, powstaje przezroczysty SVG z podglądem na różnych tłach.','Darmowe usuwanie tła SVG: wykryj i usuń kształty tła i pobierz przezroczysty SVG. Bez przesyłania plików.'],
+ ['Wyświetl SVG, sprawdź wymiary, ścieżki i kolory i obejrzyj go na różnych tłach bez przesyłania pliku.','Darmowa przeglądarka SVG: otwieraj i sprawdzaj SVG z powiększeniem, tłami kontrolnymi i danymi pliku. Wszystko w przeglądarce.'],
+ ['Zamień SVG na Base64 lub ciąg z kodowaniem URL, gotowy do wklejenia w HTML lub CSS, w przeglądarce.','Darmowy konwerter SVG na Base64: zakoduj SVG jako Data URI dla HTML lub CSS i porównaj rozmiary. Bez przesyłania plików.'],
+ ['Sformatuj kod SVG: uporządkowane wcięcia, czytelne atrybuty i porównanie przed i po.','Darmowy formater kodu SVG: ustaw wcięcia i uporządkuj SVG według własnych preferencji. W przeglądarce, bez przesyłania.'],
+ ['Zminimalizuj SVG: usuń białe znaki, komentarze i metadane, skróć liczby i zobacz, ile bajtów zaoszczędzono.','Darmowy minimalizator SVG: zmniejsz kod SVG do minimum z podglądem na żywo i bez przesyłania plików.'],
+ ['Usuń z SVG metadane i dane edytora, takie jak RDF, Inkscape czy Illustrator, i pobierz czystą wersję.','Darmowe usuwanie metadanych SVG: wyczyść metadane, komentarze i dane edytora z SVG. Wszystko w przeglądarce.'],
+ ['Sprawdzaj SVG podczas pisania: błędy XML, problemy z przestrzenią nazw, brak viewBox i uszkodzone odwołania.','Darmowy walidator SVG: sprawdź kod SVG natychmiast i otrzymaj błędy, ostrzeżenia i wskazówki. Bez przesyłania plików.'],
+ ['Zamień SVG na Data URI gotowy do osadzenia w HTML lub CSS, w Base64 lub z kodowaniem URL.','Darmowy konwerter SVG na Data URI: wygeneruj URI dla HTML lub CSS i porównaj rozmiar. Wszystko w przeglądarce.']
+];

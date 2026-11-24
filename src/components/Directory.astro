@@ -1,0 +1,32 @@
+---
+// "All converters" directory: search box, filter tabs and one card grid per tool group.
+const { dir } = Astro.props;
+const D = dir.d;
+---
+<section class="block dx" id="all" aria-labelledby="h-all"><div class="wrap">
+  <header class="dx-head"><p class="eyebrow">{D.eyebrow}</p><h2 class="title" id="h-all">{D.title}</h2>
+  <p class="sx-def">{dir.lead}</p>
+  <div class="dx-tools"><label class="dx-search"><span class="sr-only">{D.searchLabel}</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="dxq" type="search" placeholder={D.search} autocomplete="off"></label>
+  <div class="dx-tabs" role="group" aria-label={D.filter}><button type="button" class="on" data-f="all" aria-pressed="true">{D.all} <i>{dir.total}</i></button>{dir.groups.map((g) => <button type="button" data-f={g.key} aria-pressed="false">{g.title} <i>{g.count}</i></button>)}</div></div>
+  <p class="dx-status" id="dxs" role="status" aria-live="polite"></p></header>
+  <nav class="dx-nav" aria-label={D.nav}>
+    {dir.groups.map((g) => (
+      <section class="dx-group" id={g.id} data-g={g.key} aria-labelledby={g.id + '-h'}>
+        <header class="dx-gh"><span class="dx-gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={g.icon}></svg></span><div><h3 id={g.id + '-h'}>{g.title}</h3><p>{g.desc}</p></div><span class="dx-count">{g.count}</span></header>
+        <ul class="dx-grid" role="list">
+          {g.items.map((it) => (
+            <li class="dx-item" data-g={it.key} data-t={it.search} style={'--h:' + it.hue}>
+              <a class={'dx-card' + (it.cur ? ' cur' : '')} href={it.href} hreflang={it.hreflang} aria-current={it.cur ? 'page' : undefined}>
+                <span class="dx-kind">{it.kind}{it.cur && <b class="dx-here">{D.here}</b>}</span>
+                <h4>{it.title}</h4>
+                {it.blurb && <p>{it.blurb}</p>}
+                <span class="dx-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </nav>
+  <p class="dx-empty" id="dxe" hidden>{D.empty}</p>
+</div></section>

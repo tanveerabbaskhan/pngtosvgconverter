@@ -1,0 +1,21 @@
+// [lead, meta description <=160] for the 18 SVG tool pages (order: see fr-copy.js)
+module.exports=[
+ ['SVG dosyasını istediğiniz boyutta PNG görsele dönüştürün; saydam arka plan ve canlı önizleme ile, tarayıcıdan çıkmadan.','Ücretsiz SVG PNG dönüştürücü: boyutu ve arka planı seçip net bir görsel indirin. Dosya yüklenmez, her şey tarayıcınızda çalışır.'],
+ ['SVG dosyasını seçtiğiniz arka plan ve kaliteyle JPG görsele dönüştürün; canlı önizleme var, dosya yüklenmez.','Ücretsiz SVG JPG dönüştürücü: boyutu, arka plan rengini ve kaliteyi ayarlayıp sonucu indirin. Her şey tarayıcınızda.'],
+ ['SVG dosyasını isteğe bağlı saydamlık ve kalite denetimiyle hafif bir WebP görsele dönüştürün, doğrudan tarayıcıda.','Ücretsiz SVG WebP dönüştürücü: canlı önizlemeyle boyut ve kalite seçip hafif bir görsel indirin. Dosya yüklenmez.'],
+ ['SVG dosyasını istediğiniz sayfa boyutu ve kenar boşluğuyla PDF belgesine dönüştürün, hiçbir şey yüklemeden.','Ücretsiz SVG PDF dönüştürücü: sayfa boyutu ve kenar boşluğunu seçin, önizlemeyi kontrol edip PDF’yi indirin. Tarayıcınızda çalışır.'],
+ ['SVG dosyasını favicon olarak kullanıma hazır, çok boyutlu bir ICO simgesine dönüştürün, doğrudan tarayıcıda.','Ücretsiz SVG ICO dönüştürücü: ihtiyacınız olan boyutlarda favicon üretip hemen indirin. Dosya yüklenmez.'],
+ ['SVG dosyanızı görünümünü değiştirmeden sıkıştırıp küçültün: düzeyi seçin, boyutları canlı karşılaştırın.','Ücretsiz SVG sıkıştırıcı: SVG dosyalarını canlı önizleme ve önce/sonra karşılaştırmasıyla küçültün. Her şey tarayıcıda.'],
+ ['SVG kodunuzu optimize edin: gereksizleri silin, renkleri kısaltın, sayıları yuvarlayın ve kazancı anında görün.','Ücretsiz SVG optimize edici: SVG’leri her adımı denetleyerek ve canlı önizlemeyle temizleyip küçültün, dosya yüklemeden.'],
+ ['SVG dosyanızı kalite kaybı olmadan tam istediğiniz ölçülere getirin; en boy oranı kilitlenebilir, hızlı boyutlar var.','Ücretsiz SVG yeniden boyutlandırıcı: genişlik ve yüksekliği ayarlayın, oranı koruyun, SVG’yi indirin. Tarayıcınızda çalışır.'],
+ ['SVG dosyanızı görünür alanı ayarlayarak veya içeriğe göre otomatik kırpın; sonucu canlı önizleyin.','Ücretsiz SVG kırpma aracı: alanı belirleyin veya içeriğe sığdırın, kırpılmış SVG’yi indirin. Dosya yüklenmez.'],
+ ['SVG renklerini değiştirin: her rengi değiştirin, tonu kaydırın, ters çevirin veya griye çevirin; canlı önizleme ile.','Ücretsiz SVG renk değiştirici: her rengi düzenleyin, tonu kaydırın veya paleti ters çevirip sonucu indirin. Tarayıcıda.'],
+ ['SVG arka planını kaldırın: arka plan şekilleri algılanıp silinir, farklı zeminlerde önizlemeli saydam bir SVG elde edilir.','Ücretsiz SVG arka plan silici: arka plan şekillerini algılayıp silin, saydam SVG indirin. Dosya yüklenmez.'],
+ ['SVG’nizi görüntüleyin, boyutlarını, yollarını ve renklerini inceleyin ve dosya yüklemeden farklı zeminlerde görün.','Ücretsiz SVG görüntüleyici: SVG’leri yakınlaştırma, kontrol zeminleri ve dosya bilgileriyle açıp inceleyin. Tarayıcıda çalışır.'],
+ ['SVG dosyanızı HTML veya CSS’e yapıştırmaya hazır Base64 ya da URL kodlamalı dizeye dönüştürün, tarayıcıda.','Ücretsiz SVG Base64 dönüştürücü: SVG’yi HTML veya CSS için data URI olarak kodlayıp boyutları karşılaştırın. Dosya yüklenmez.'],
+ ['SVG kodunuzu biçimlendirin: düzgün girinti, okunaklı öznitelikler ve önce/sonra karşılaştırması.','Ücretsiz SVG kod biçimlendirici: SVG’nizi tercihlerinize göre girintileyip düzenleyin. Tarayıcıda, yüklemesiz.'],
+ ['SVG dosyanızı küçültün: boşlukları, yorumları ve meta veriyi silin, sayıları kısaltın ve kazandığınız baytı görün.','Ücretsiz SVG küçültücü: SVG kodunu canlı önizlemeyle en aza indirin, dosya yüklemeden.'],
+ ['SVG dosyanızdan RDF, Inkscape veya Illustrator gibi meta ve düzenleyici verilerini silin, temiz bir sürüm indirin.','Ücretsiz SVG meta veri temizleyici: SVG’lerden meta veri, yorum ve düzenleyici verisini kaldırın. Her şey tarayıcıda.'],
+ ['SVG dosyanızı yazarken doğrulayın: XML hataları, ad alanı sorunları, eksik viewBox ve bozuk başvurular algılanır.','Ücretsiz SVG doğrulayıcı: SVG kodunu anında denetleyin, hata, uyarı ve ipuçları alın. Dosya yüklenmez.'],
+ ['SVG dosyanızı HTML veya CSS’e gömmeye hazır, Base64 veya URL kodlamalı bir data URI’ye dönüştürün.','Ücretsiz SVG data URI dönüştürücü: HTML veya CSS için URI üretip boyutu karşılaştırın. Tarayıcınızda çalışır.']
+];

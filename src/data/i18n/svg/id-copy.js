@@ -1,0 +1,21 @@
+// [lead, meta description <=160] for the 18 SVG tool pages (order: see fr-copy.js)
+module.exports=[
+ ['Ubah SVG menjadi gambar PNG dengan ukuran yang Anda perlukan, dengan latar transparan dan pratinjau langsung, langsung di browser.','Konverter SVG ke PNG gratis: pilih ukuran dan latar lalu unduh gambar yang tajam. Tanpa unggah file, semuanya di browser Anda.'],
+ ['Ubah SVG menjadi gambar JPG dengan latar dan kualitas pilihan Anda, dengan pratinjau langsung dan tanpa mengunggah file.','Konverter SVG ke JPG gratis: atur ukuran, warna latar, dan kualitas lalu unduh hasilnya. Semuanya di browser Anda.'],
+ ['Ubah SVG menjadi gambar WebP yang ringan, dengan transparansi opsional dan kontrol kualitas, langsung di browser.','Konverter SVG ke WebP gratis: pilih ukuran dan kualitas dengan pratinjau langsung lalu unduh gambar ringan. Tanpa unggah file.'],
+ ['Ubah SVG menjadi dokumen PDF dengan ukuran halaman dan margin yang Anda inginkan, tanpa mengunggah apa pun.','Konverter SVG ke PDF gratis: pilih ukuran halaman dan margin, periksa pratinjau, lalu unduh PDF. Semuanya di browser Anda.'],
+ ['Ubah SVG menjadi ikon ICO berbagai ukuran, siap dipakai sebagai favicon, langsung di browser.','Konverter SVG ke ICO gratis: buat favicon dengan ukuran yang Anda perlukan dan unduh seketika. Tanpa unggah file.'],
+ ['Kompres SVG Anda untuk memperkecil file tanpa mengubah tampilan: pilih tingkat dan bandingkan ukuran secara langsung.','Kompresor SVG gratis: perkecil file SVG dengan pratinjau langsung dan perbandingan sebelum dan sesudah. Semuanya di browser.'],
+ ['Optimalkan kode SVG Anda: hapus yang tidak perlu, singkat warna, bulatkan angka, dan lihat hematnya seketika.','Pengoptimal SVG gratis: bersihkan dan perkecil SVG dengan kontrol penuh tiap langkah dan pratinjau langsung, tanpa unggah file.'],
+ ['Ubah ukuran SVG Anda ke dimensi yang tepat tanpa kehilangan kualitas, dengan rasio aspek yang dapat dikunci dan ukuran cepat.','Pengubah ukuran SVG gratis: atur lebar dan tinggi, pertahankan rasio, lalu unduh SVG yang sudah disesuaikan. Semuanya di browser.'],
+ ['Pangkas SVG Anda dengan mengatur area yang terlihat, atau pangkas otomatis sesuai isi, dengan pratinjau hasil langsung.','Pemangkas SVG gratis: tentukan area atau sesuaikan dengan isi lalu unduh SVG terpangkas. Tanpa unggah file.'],
+ ['Ubah warna SVG Anda: ganti tiap warna, geser rona, balik, atau jadikan abu-abu dengan pratinjau langsung.','Pengubah warna SVG gratis: edit tiap warna, geser rona, atau balik palet lalu unduh hasilnya. Di browser Anda.'],
+ ['Hapus latar belakang SVG Anda: bentuk latar terdeteksi lalu dihapus sehingga SVG menjadi transparan, dengan pratinjau di berbagai latar.','Penghapus latar SVG gratis: deteksi dan hapus bentuk latar lalu unduh SVG transparan. Tanpa unggah file.'],
+ ['Lihat SVG Anda, periksa dimensi, path, dan warnanya, dan tampilkan di berbagai latar tanpa mengunggah file.','Penampil SVG gratis: buka dan periksa SVG dengan zoom, latar pemeriksa, dan data file. Semuanya di browser.'],
+ ['Ubah SVG Anda menjadi Base64 atau string berkode URL, siap ditempel di HTML atau CSS, di browser.','Konverter SVG ke Base64 gratis: kodekan SVG sebagai data URI untuk HTML atau CSS dan bandingkan ukurannya. Tanpa unggah file.'],
+ ['Format kode SVG Anda: indentasi rapi, atribut mudah dibaca, dan perbandingan sebelum dan sesudah.','Pemformat kode SVG gratis: beri indentasi dan rapikan SVG sesuai selera. Semuanya di browser, tanpa unggah.'],
+ ['Minifikasi SVG Anda: hapus spasi, komentar, dan metadata, singkat angka, dan lihat berapa byte yang dihemat.','Minifier SVG gratis: perkecil kode SVG sekecil mungkin dengan pratinjau langsung dan tanpa unggah file.'],
+ ['Hapus metadata dan data editor seperti RDF, Inkscape, atau Illustrator dari SVG Anda dan unduh versi yang bersih.','Penghapus metadata SVG gratis: buang metadata, komentar, dan data editor dari SVG. Semuanya di browser.'],
+ ['Validasi SVG Anda saat mengetik: kesalahan XML, masalah namespace, viewBox hilang, dan referensi rusak terdeteksi.','Validator SVG gratis: periksa kode SVG seketika dan dapatkan kesalahan, peringatan, dan tips. Tanpa unggah file.'],
+ ['Ubah SVG Anda menjadi data URI siap sematkan di HTML atau CSS, dalam Base64 atau berkode URL.','Konverter SVG ke data URI gratis: buat URI untuk HTML atau CSS dan bandingkan ukurannya. Semuanya di browser.']
+];

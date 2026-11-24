@@ -1,0 +1,5 @@
+---
+import { layoutLib, S } from '../lib/site.mjs';
+const { href } = Astro.props;
+---
+<a class="logo" href={href}><Fragment set:html={layoutLib.logoSvg} />{S.NAME}</a>

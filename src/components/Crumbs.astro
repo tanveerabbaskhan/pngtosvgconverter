@@ -1,0 +1,6 @@
+---
+import { S, dataModule } from '../lib/site.mjs';
+const { base, name, locale = 'en' } = Astro.props;
+const labels = dataModule('i18n/crumb-label.js');
+---
+<nav class="crumbs" aria-label={labels[locale] || labels.en}><a href={base || './'}>{S.NAME}</a><span aria-hidden="true">›</span><span aria-current="page">{name}</span></nav>

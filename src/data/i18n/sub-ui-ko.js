@@ -1,0 +1,7 @@
+module.exports={onPage:'이 페이지의 내용',how:'작동 방식',process:'과정',settings:'설정 및 차트',faq:'자주 묻는 질문',all:'모든 변환기',under:'내부 동작 원리',
+ hHow:k=>`${k}의 작동 방식`,stages:k=>`${k}의 네 단계를 원본 파일부터 완성된 결과까지 살펴봅니다.`,step:'단계별 안내',hProc:k=>`과정: ${k}`,tip:'팁:',use:k=>`${k} 사용하기`,
+ ref:'참고',hChart:k=>`설정 및 변환 차트: ${k}`,glance:'한눈에 보기',best:'가장 잘 맞는 경우:',care:'가장 주의가 필요한 경우:',largest:'가장 큼:',smallest:'가장 작음:',
+ answers:'답변',hFaq:k=>`자주 묻는 질문: ${k}`,faqDef:k=>`${k}에 대해 이 사용 사례에 맞춘 자주 묻는 질문과 답변입니다.`,faqAria:k=>`${k}에 대한 질문`,ready:'사용해 보시겠어요?',oneDrop:'파일을 놓기만 하면 결과가 나옵니다.',open:k=>`${k} 열기`,
+ upload:'파일 놓기 영역',controls:'설정',palette:'이미지에서 추출한 팔레트',grid:'픽셀 격자',rel:'상대량',orig:'원본',before:'변환 전',after:'변환 후',dl:f=>`${f} 다운로드`,
+ drop:f=>`${f} 놓기`,dropSvg:'SVG 놓기',attr:[[' compared with ',' 대 '],[' file',' 파일'],['Score ','점수 ']],
+ ctl:{'Colors being replaced':'교체되는 색상','Colors':'색상 수','Detail':'세부 묘사','Smoothness':'부드러움','Precision':'정밀도','Whitespace':'공백','Metadata':'메타데이터','Comments':'주석','Width':'너비','Height':'높이','Scale':'배율','X / Y':'X / Y','Aspect':'가로세로 비율','Hue shift':'색조 이동','Invert':'반전','Grayscale':'회색조','Candidates':'후보','Root style':'루트 스타일','Backdrop':'배경색','Zoom':'확대/축소','Background':'배경','Pan':'이동','Encoding':'인코딩','Wrapper':'래퍼','Minify':'최소화','Indent':'들여쓰기','Wrap':'줄 바꿈','Depth':'깊이','Editor data':'편집기 데이터','Errors':'오류','Warnings':'경고','Notes':'참고','Quality':'품질','Page':'페이지','Margin':'여백','Sizes':'크기','16 px':'16 px','256 px':'256 px','Size':'크기'}};

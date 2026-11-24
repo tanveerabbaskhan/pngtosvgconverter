@@ -1,0 +1,21 @@
+---
+// Renders a page body from its ordered block list (see the page model in src/lib/data/page-model.js).
+import Crumbs from './Crumbs.astro';
+import Hero from './Hero.astro';
+import RasterTool from './RasterTool.astro';
+import SvgTool from './SvgTool.astro';
+import HomeSections from './HomeSections.astro';
+import ToolSections from './ToolSections.astro';
+import Directory from './Directory.astro';
+const { o } = Astro.props;
+---
+{o.blocks.map((b) =>
+  b.type === 'crumbs' ? <Crumbs base={b.data.base} name={b.data.name} locale={o.locale} />
+  : b.type === 'hero' ? <Hero hero={b.data} />
+  : b.type === 'rasterTool' ? <RasterTool tool={b.data} />
+  : b.type === 'svgTool' ? <SvgTool tool={b.data} />
+  : b.type === 'homeSections' ? <HomeSections o={o} d={b.data} />
+  : b.type === 'toolSections' ? <ToolSections d={b.data} />
+  : b.type === 'directory' ? <Directory dir={b.data} />
+  : null
+)}

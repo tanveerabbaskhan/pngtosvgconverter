@@ -1,0 +1,7 @@
+module.exports={onPage:'このページの内容',how:'仕組み',process:'手順',settings:'設定とグラフ',faq:'よくある質問',all:'すべての変換ツール',under:'内部の仕組み',
+ hHow:k=>`${k}の仕組み`,stages:k=>`${k}の4つの工程を、元ファイルから完成までたどります。`,step:'ステップごとの手順',hProc:k=>`手順：${k}`,tip:'ヒント：',use:k=>`${k}を使う`,
+ ref:'リファレンス',hChart:k=>`設定と変換グラフ：${k}`,glance:'ひと目でわかる要点',best:'最も向いているもの：',care:'最も注意が必要なもの：',largest:'最大：',smallest:'最小：',
+ answers:'回答',hFaq:k=>`よくある質問：${k}`,faqDef:k=>`${k}について、このケースに合わせたよくある質問と回答です。`,faqAria:k=>`${k}についての質問`,ready:'試してみませんか？',oneDrop:'ドロップするだけで結果が得られます。',open:k=>`${k}を開く`,
+ upload:'ドロップエリア',controls:'設定',palette:'画像から抽出したパレット',grid:'ピクセルグリッド',rel:'相対量',orig:'元画像',before:'変換前',after:'変換後',dl:f=>`${f}をダウンロード`,
+ drop:f=>`${f}をドロップ`,dropSvg:'SVGをドロップ',attr:[[' compared with ',' と '],[' file','ファイル'],['Score ','スコア ']],
+ ctl:{'Colors being replaced':'置き換える色','Colors':'色数','Detail':'ディテール','Smoothness':'滑らかさ','Precision':'精度','Whitespace':'空白','Metadata':'メタデータ','Comments':'コメント','Width':'幅','Height':'高さ','Scale':'倍率','X / Y':'X / Y','Aspect':'縦横比','Hue shift':'色相シフト','Invert':'反転','Grayscale':'グレースケール','Candidates':'候補','Root style':'ルートのスタイル','Backdrop':'背景色','Zoom':'ズーム','Background':'背景','Pan':'移動','Encoding':'エンコード','Wrapper':'ラッパー','Minify':'ミニファイ','Indent':'インデント','Wrap':'折り返し','Depth':'階層','Editor data':'エディタデータ','Errors':'エラー','Warnings':'警告','Notes':'注意','Quality':'品質','Page':'ページ','Margin':'余白','Sizes':'サイズ','16 px':'16 px','256 px':'256 px','Size':'サイズ'}};

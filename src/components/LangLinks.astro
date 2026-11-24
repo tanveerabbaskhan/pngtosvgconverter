@@ -1,0 +1,13 @@
+---
+import { S, layoutLib } from '../lib/site.mjs';
+const { o } = Astro.props;
+const available = layoutLib.avail(o);
+const items = S.LOCALES.map((l) => {
+  const ok = available.includes(l.code) && (o.kind === 'tool' || o.kind === 'static');
+  const href = ok ? (l.code === 'en' ? o.path : '/' + l.code + o.path) : (l.code === 'en' ? '/' : '/' + l.code + '/');
+  return { l, href, current: l.code === o.locale && (o.kind === 'home' || ok) };
+});
+---
+{items.map(({ l, href, current }) => (
+  <li><a href={href} lang={l.code} hreflang={l.code} aria-current={current ? 'page' : undefined}>{l.name}</a></li>
+))}

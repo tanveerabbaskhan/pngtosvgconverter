@@ -1,0 +1,14 @@
+---
+// About, Contact, Terms, Privacy, Sitemap and 404: breadcrumb + hero + prose card. The prose body is still HTML text per locale.
+import Crumbs from './Crumbs.astro';
+const { o } = Astro.props;
+const def = o.def;
+const is404 = o.kind === '404';
+---
+{!is404 && <Crumbs base={o.crumbBase} name={def.crumb || def.h1} locale={o.locale} />}
+<section class="hero hero3 static"><div class="wrap"><header class="hero-head"><h1>{def.h1}</h1><p class="hero-lead">{def.lead}</p></header></div></section>
+<div class="prose-wrap">
+  {is404
+    ? <div class="card prose"><Fragment set:html={def.body} /></div>
+    : <article class="card prose"><Fragment set:html={def.body} /></article>}
+</div>

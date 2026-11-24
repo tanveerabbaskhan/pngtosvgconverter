@@ -1,0 +1,60 @@
+---
+import { layoutLib, S } from '../lib/site.mjs';
+const { o } = Astro.props;
+const { urlOf, avail, graph, hueCss, LB } = layoutLib;
+const url = urlOf(o.path, o.locale);
+const L = LB[o.locale];
+const robots = o.noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
+const available = avail(o);
+const alternates = o.alt ? S.LOCALES.filter((l) => available.includes(l.code)).map((l) => ({ lang: l.code, href: urlOf(o.path, l.code) })) : [];
+const ogAlts = o.alt ? S.LOCALES.filter((l) => l.code !== o.locale).map((l) => l.og) : [];
+const img = S.DOMAIN + S.OG.path;
+const v = S.VERIFY;
+const hue = hueCss(o.hue || 258).replace(/^<style>/, '').replace(/<\/style>$/, '');
+const themeInit = 'try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}';
+const ld = JSON.stringify(graph(o)).replace(/</g, '\\u003c');
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+{o.base404 && <base href="/" />}
+<title>{o.title}</title>
+<meta name="description" content={o.desc} />
+<meta name="robots" content={robots} />
+<meta name="googlebot" content={robots} />
+{!o.noindex && <link rel="canonical" href={url} />}
+{alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+{o.alt && <link rel="alternate" hreflang="x-default" href={urlOf(o.path, 'en')} />}
+{!o.alt && !o.noindex && <link rel="alternate" hreflang="en" href={url} />}
+{!o.alt && !o.noindex && <link rel="alternate" hreflang="x-default" href={url} />}
+<meta name="theme-color" content="#6b57ff" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+{v.google && <meta name="google-site-verification" content={v.google} />}
+{v.bing && <meta name="msvalidate.01" content={v.bing} />}
+{v.yandex && <meta name="yandex-verification" content={v.yandex} />}
+{S.ADSENSE && <meta name="google-adsense-account" content={S.ADSENSE} />}
+{S.ADSENSE && <script async src={'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + S.ADSENSE} crossorigin="anonymous"></script>}
+{S.GA4 && <script async src={'https://www.googletagmanager.com/gtag/js?id=' + S.GA4}></script>}
+{S.GA4 && <script is:inline set:html={'window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","' + S.GA4 + '");'}></script>}
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={S.NAME} />
+<meta property="og:title" content={o.title} />
+<meta property="og:description" content={o.desc} />
+<meta property="og:url" content={url} />
+<meta property="og:locale" content={L.og} />
+{ogAlts.map((x) => <meta property="og:locale:alternate" content={x} />)}
+<meta property="og:image" content={img} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content={String(S.OG.w)} />
+<meta property="og:image:height" content={String(S.OG.h)} />
+<meta property="og:image:alt" content={o.ogAlt || S.OG.alt} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={o.title} />
+<meta name="twitter:description" content={o.desc} />
+<meta name="twitter:image" content={img} />
+<meta name="twitter:image:alt" content={o.ogAlt || S.OG.alt} />
+<script type="application/ld+json" is:inline set:html={ld}></script>
+<script is:inline set:html={themeInit}></script>
+<link rel="stylesheet" href={o.r + 'assets/style.css'} />
+<style is:inline set:html={hue}></style>
