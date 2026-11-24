@@ -68,7 +68,7 @@ Removed from the site on request and its data files deleted. To add it back, fol
 
 ## Redirects from the old site
 
-The old site (`/convert/…`, `/guides/…`, `/compare/…`, `/svg/…`, `/contact/`, plus `/de /es /fr /ja /nl` copies) is mapped to the new URLs by semantic rules in `src/data/redirects.js` (123 redirects):
+The old site (`/convert/…`, `/guides/…`, `/compare/…`, `/svg/…`, `/blog/…`, `/contact/`, plus `/de /es /fr /ja /nl` copies) is mapped to the new URLs by semantic rules in `src/data/redirects.js` (159 redirects):
 
 | Old | New |
 | --- | --- |
@@ -79,6 +79,7 @@ The old site (`/convert/…`, `/guides/…`, `/compare/…`, `/svg/…`, `/conta
 | `/guides/how-to-vectorize-an-image/`, `/svg/what-is-image-tracing/` | `/image-to-svg-converter/` |
 | `/guides/how-to-reduce-svg-nodes/` | `/svg-optimizer/` |
 | `/svg/what-is-svg/` | `/svg-viewer/` |
+| `/blog/`, `/blog/<slug>/` (5 posts) | `/` (the live site already 301s every `/blog/*` URL to its locale home) |
 | `/contact/` | `/contact-us/` |
 | `/privacy/`, `/terms/`, `/<loc>/` | unchanged |
 
@@ -91,6 +92,6 @@ Two outputs come from the one list: Astro emits a redirect page (meta refresh + 
 ## Deploying on Cloudflare Pages
 
 - Project settings (repo root is this folder): root directory `/` (blank), build command `npm run build`, output directory `dist`, Node 20 or newer (set `NODE_VERSION` if needed).
-- `npm run build` writes `public/_redirects` first, so it ends up in `dist/_redirects`; Pages applies it as 301s. The 123 rules are static redirects (Pages allows 2000), and absolute-host rules are not supported in `_redirects`.
+- `npm run build` writes `public/_redirects` first, so it ends up in `dist/_redirects`; Pages applies it as 301s. The 159 rules are static redirects (Pages allows 2000), and absolute-host rules are not supported in `_redirects`.
 - `www` → apex: Pages cannot do this in `_redirects`. Add the `www` custom domain to the project (or a proxied DNS record for `www`) and create a Redirect Rule in Cloudflare (Rules → Redirect Rules): when hostname equals `www.pngtosvgconverter.com`, redirect with dynamic expression `concat("https://pngtosvgconverter.com", http.request.uri.path)` (preserve query string), status 301.
 - After the first deploy, spot-check with `curl -sI https://pngtosvgconverter.com/convert/avif-to-svg/` (expect `301` and `location: /avif-to-svg-converter/`), then submit `https://pngtosvgconverter.com/sitemap.xml` in Search Console.
