@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import StaticPage from '../components/StaticPage.astro';
+import { notFound } from '../lib/site.mjs';
+---
+<Base o={notFound.o}><StaticPage o={notFound.o} /></Base>

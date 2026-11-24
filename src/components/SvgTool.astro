@@ -1,0 +1,46 @@
+---
+// SVG tools UI (exporters + utilities). The behaviour is in /assets/svgtools.js, which fills #ctl, #stage and #metrics.
+// Labels are English keys; on translated pages `dict` maps each key to the locale's text (the same dictionary the script uses at runtime).
+const { tool } = Astro.props;
+const { h2, dl, exp, open, dict } = tool;
+const t = (s) => (dict && Object.prototype.hasOwnProperty.call(dict, s) && typeof dict[s] === 'string' ? dict[s] : s);
+---
+<section class="tool" id="converter" aria-labelledby="h-tool"><h2 class="sr-only" id="h-tool">{h2}</h2>
+    <div class="wrap conv-wrap">
+      <div class="card conv">
+        <h3 class="lbl"><b>1</b>{t('Add your SVG')}</h3>
+        <div class="drop" id="drop" role="button" tabindex="0" aria-label={t('Upload an SVG')}>
+          <div class="dic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5 5 5M4 20h16"/></svg></div>
+          <div class="dtxt">
+            <b>{t('Drop your SVG here, or click to browse')}</b>
+            <span>{t('Or paste SVG code anywhere on the page. Nothing is uploaded.')}</span>
+            <div class="samples" onclick="event.stopPropagation()">{t('No file?')} <button data-sample="subject">{t('Try the sample SVG')}</button></div>
+          </div>
+          <button class="btn primary" type="button">{t('Choose SVG')}</button>
+        </div>
+
+        <div class="opts">
+          <h3 class="lbl"><b>2</b>{t('Adjust the options')}<button class="link" id="btnReset" type="button">{t('Reset')}</button></h3>
+          <div id="ctl" class="ctl-cols"></div>
+        </div>
+
+        <div class="out">
+          <h3 class="lbl"><b>3</b>{t('Preview and download')}</h3>
+          <div class="ws-bar"><div class="file"><span class="live"><i></i>{t('Live preview')}</span><div><b id="fname">sample.svg</b></div></div>
+            <div class="out-actions">
+              <button class="btn" id="btnCopy" type="button">{t('Copy code')}</button>
+              <button class="btn primary dlbtn" id="btnDownload" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m0 0 5-5m-5 5-5-5M4 20h16"/></svg>{t(dl)}</button>
+            </div></div>
+          <div class="stg" id="stage"></div>
+          <div class="metrics m4" id="metrics"></div>
+          <details class="more" open={open ? true : undefined}>
+            <summary><span>{t(exp ? 'SVG code' : 'Input and output code')}</span><small>{t(exp ? 'Edit or paste the SVG you are exporting' : 'View, edit and copy the code')}</small></summary>
+            <div class="more-in"><div class="io">
+              <div class="io-p"><div class="io-h"><b>{t('Input SVG code')}</b><small id="inMeta"></small></div><textarea id="inCode" spellcheck="false" aria-label={t('SVG code')} dir="ltr"></textarea></div>
+              <div class="io-p" id="outPanel" hidden={exp ? true : undefined}><div class="io-h"><b id="outTitle">{t('Output')}</b><small id="outMeta"></small></div><pre id="outCode" class="mono" dir="ltr"></pre></div>
+            </div></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>

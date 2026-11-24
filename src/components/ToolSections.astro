@@ -1,0 +1,50 @@
+---
+// Long-form sections under each tool: how it works, step-by-step process, settings chart + table, FAQ.
+// Labels are English keys; on translated pages d.L maps each one to the locale's wording (exact match only).
+const { d } = Astro.props;
+const { c, kw, L } = d;
+const t = (s) => (Object.prototype.hasOwnProperty.call(L, s) ? L[s] : s);
+---
+<nav class="sx-toc" aria-label={t('On this page')}><div class="wrap"><span>{t('On this page')}</span><a href="#how-it-works">{t('How it works')}</a><a href="#process">{t('Process')}</a><a href="#settings-chart">{t('Settings and chart')}</a><a href="#faq">{t('FAQ')}</a><a href="#all">{t('All converters')}</a></div></nav>
+
+<section class="block sx" id="how-it-works" aria-labelledby="h-how"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{t('Under the hood')}</p><h2 class="title" id="h-how">{t('How ' + kw + ' works')}</h2><p class="sx-def">{c.def}</p></header>
+  <figure class="sx-fig" aria-labelledby="fc-how">
+    <ol class="sx-pipe sx-p4">{d.stages.map((s, i) => (
+      <li class="sx-stage"><div class="sx-art" set:html={s.art}></div><span class="sx-n" aria-hidden="true">{i + 1}</span><h3>{s.h}</h3><p>{s.d}</p><span class="sx-tech">{s.tech}</span></li>
+    ))}</ol>
+    <figcaption id="fc-how">{t('The four stages of the ' + kw + ', from your input to the finished file.')}</figcaption>
+  </figure>
+  <div class="sx-card sx-why"><h3>{c.why[0]}</h3><dl class="sx-dl sx-dl3">{c.why[1].map(([dt, dd]) => <div><dt>{dt}</dt><dd>{dd}</dd></div>)}</dl></div>
+</div></section>
+
+<section class="block sx" id="process" aria-labelledby="h-proc"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{t('Step by step')}</p><h2 class="title" id="h-proc">{t(kw + ' process')}</h2><p class="sx-def">{c.pdef}</p></header>
+  <ol class="sx-proc">{c.steps.map(([h, desc, tip], i) => (
+    <li><div class="sx-pn" aria-hidden="true">{i + 1}</div><div class="sx-pbody"><h3>{h}</h3><p>{desc}</p><p class="sx-tip"><strong>{t('Tip:')}</strong> {tip}</p></div><div class="sx-pmock" set:html={d.procArts[i] || ''}></div></li>
+  ))}</ol>
+  <p class="sx-after"><a class="btn primary lg" href="#converter">{t('Use the ' + kw)}</a></p>
+</div></section>
+
+<section class="block sx" id="settings-chart" aria-labelledby="h-chart"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{t('Reference')}</p><h2 class="title" id="h-chart">{t(kw + ' settings / conversion chart')}</h2><p class="sx-def">{c.cdef}</p></header>
+  <div class="sx-split sx-top">
+    <figure class="sx-fig sx-card" aria-labelledby="fc-chart"><h3>{c.bars.title}</h3><Fragment set:html={d.bars} /><figcaption id="fc-chart">{c.bars.cap}</figcaption></figure>
+    <div class="sx-card"><h3>{t('At a glance')}</h3><ul class="sx-checks">
+      {d.isRating
+        ? <><li><strong>{t('Converts best:')}</strong> {d.bestFirst}.</li><li><strong>{t('Needs the most care:')}</strong> {d.bestLast}.</li></>
+        : <><li><strong>{t('Largest:')}</strong> {d.bestFirst}.</li><li><strong>{t('Smallest:')}</strong> {d.bestLast}.</li></>}
+    </ul><p class="sx-note">{c.bars.cap}</p></div>
+  </div>
+  <div class="sx-tblwrap"><table class="sx-tbl"><caption>{c.table.cap}</caption><thead><tr>{c.table.cols.map((h) => <th scope="col">{h}</th>)}</tr></thead><tbody>
+    {c.table.rows.map((r) => <tr><th scope="row">{r[0]}</th>{r.slice(1).map((x) => <td>{x}</td>)}</tr>)}
+  </tbody></table></div>
+</div></section>
+
+<section class="block sx" id="faq" aria-labelledby="h-faq"><div class="wrap">
+  <header class="sx-h"><p class="eyebrow">{t('Answers')}</p><h2 class="title" id="h-faq">{t(kw + ' FAQ')}</h2><p class="sx-def">{t('Questions people ask about the ' + kw + ', answered for this specific use case.')}</p></header>
+  <div class="sx-faq sx-faq1"><section class="sx-fg sx-fg2" aria-label={t(kw + ' questions')}>{d.faq.map(([q, a], i) => (
+    <details class="sx-q" open={i === 0 ? true : undefined}><summary><h3>{q}</h3></summary><div class="sx-a"><p set:html={a}></p></div></details>
+  ))}</section></div>
+  <div class="cta"><h3>{t('Ready to try it?')}</h3><p>{t('Your result is one drop away.')}</p><a class="btn primary lg" href="#converter" id="ctaBtn">{t('Open the ' + kw)}</a></div>
+</div></section>

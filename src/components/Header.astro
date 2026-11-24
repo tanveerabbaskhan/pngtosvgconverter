@@ -1,0 +1,20 @@
+---
+import { layoutLib } from '../lib/site.mjs';
+import Logo from './Logo.astro';
+import LangLinks from './LangLinks.astro';
+const { o } = Astro.props;
+const T = o.T;
+const items = layoutLib.navItems(o);
+---
+<header class="nav"><div class="wrap">
+  <Logo href={o.homeHref} />
+  <nav id="site-nav" aria-label={T.nav.main}>{items.map((n) => <a href={n.href}>{n.label}</a>)}</nav>
+  <div class="sp"></div>
+  <details class="header-lang">
+    <summary aria-label={T.foot.lang}><span aria-hidden="true">🌐</span> <span>{o.locale.toUpperCase()}</span></summary>
+    <div class="header-lang-menu"><span class="header-lang-label">{T.foot.lang}</span><ul><LangLinks o={o} /></ul></div>
+  </details>
+  <button class="icon-btn" id="themeBtn" type="button" aria-label={T.nav.theme}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+  {o.uploadBtn && <button class="btn primary" id="navUpload" type="button">{o.uploadBtn}</button>}
+  <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label={T.nav.menu} aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></header>

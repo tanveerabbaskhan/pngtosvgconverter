@@ -1,28 +1,20 @@
 {
-  "name": "pngtosvgconverter",
-  "version": "0.1.0",
+  "name": "pngtosvgconverter-astro",
+  "type": "module",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "astro dev",
+    "build": "node scripts/gen-redirects.mjs && astro build",
+    "preview": "astro preview",
+    "compare": "node scripts/compare.mjs",
+    "verify": "node scripts/verify.mjs",
+    "audit": "node scripts/audit-deep.mjs",
+    "check:redirects": "node scripts/check-redirects.mjs",
+    "check:hreflang": "node scripts/audit-hreflang.mjs",
+    "check": "npm run verify && npm run audit && npm run check:hreflang && npm run check:redirects"
   },
   "dependencies": {
-    "imagetracerjs": "^1.2.6",
-    "next": "16.2.10",
-    "next-intl": "^4.13.2",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.10",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "astro": "^5.0.0"
   }
 }

@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import StaticPage from '../components/StaticPage.astro';
+import PageBody from '../components/PageBody.astro';
+import { pageRoutes, routeOf } from '../lib/site.mjs';
+
+// One static route per (locale, page): '/', '/svg-viewer/', '/es/', '/es/svg-viewer/', ...
+export function getStaticPaths() {
+  return pageRoutes.map((p) => ({
+    params: { route: routeOf(p.file) || undefined },
+    props: { o: p.o },
+  }));
+}
+const { o } = Astro.props;
+---
+<Base o={o}>
+  {o.kind === 'static' ? <StaticPage o={o} /> : <PageBody o={o} />}
+</Base>

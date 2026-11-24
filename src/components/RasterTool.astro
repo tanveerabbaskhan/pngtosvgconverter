@@ -1,0 +1,158 @@
+---
+// Image -> SVG converter UI (upload, presets, sliders, live preview, metrics). Behaviour lives in /assets/trace.js,
+// which finds every element below by id / data-attribute, so ids and data-* names must stay as they are.
+const { tool } = Astro.props;
+const { ui, h2, sub, sample, pixelMode, outline, barPng } = tool;
+---
+<section class="tool" id="converter" aria-labelledby="h-tool"><h2 class="sr-only" id="h-tool">{h2}</h2>
+    <div class="wrap conv-wrap">
+      <div class="card conv">
+        <h3 class="lbl"><b>1</b>{ui.step1}</h3>
+        <div class="drop" id="drop" role="button" tabindex="0" aria-label={ui.dropAria}>
+          <div class="dic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4m0 0L7 9m5-5 5 5M4 20h16"/></svg></div>
+          <div class="dtxt">
+            <b>{ui.drop}</b>
+            <span>{ui.paste}</span>
+            {sample
+              ? <div class="samples" onclick="event.stopPropagation()">{sample.label} <button data-sample="subject">{sample.button}</button></div>
+              : <div class="samples" onclick="event.stopPropagation()">{ui.sample}
+                  <button data-sample="logo">{ui.sLogo}</button>
+                  <button data-sample="scene">{ui.sScene}</button>
+                  <button data-sample="icon">{ui.sIcon}</button>
+                </div>}
+          </div>
+          <button class="btn primary" id="btnUpload" type="button">{ui.choose}</button>
+        </div>
+
+        <div class="opts">
+          <h3 class="lbl"><b>2</b>{ui.step2}<button class="link" id="btnReset" type="button">{ui.reset}</button></h3>
+          <div class="opts-grid">
+            <div class="og">
+              <h4>{ui.startFrom}</h4>
+              <div class="presets" id="presets">
+                <button data-p="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/></svg>{ui.pLogo}</button>
+                <button data-p="illus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="m3 19 6-9 4 6 3-4 5 7z"/></svg>{ui.pIllus}</button>
+                <button data-p="photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/></svg>{ui.pPhoto}</button>
+                <button data-p="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 18c4-10 6 4 10-6s4 0 6-4"/></svg>{ui.pLine}</button>
+              </div>
+            </div>
+            <div class="og">
+              <h4>{ui.style}</h4>
+              <div class="seg" id="mode" style={pixelMode ? '--n:4' : undefined}>
+                <span class="thumb"></span>
+                <button data-m="color" class="on">{ui.mColor}</button>
+                <button data-m="gray">{ui.mGray}</button>
+                <button data-m="mono">{ui.mMono}</button>
+                {pixelMode && <button data-m="pixel">Pixel</button>}
+              </div>
+              {outline && (
+                <div class="row inline">
+                  <label style="margin:0">Outline only<small>Strokes with no fill</small></label>
+                  <span class="switch"><input type="checkbox" id="outline"><i></i></span>
+                </div>
+              )}
+              <div class="row inline">
+                <label style="margin:0">{ui.rmbg}<small>{ui.rmbgSub}</small></label>
+                <span class="switch"><input type="checkbox" id="rmbg"><i></i></span>
+              </div>
+            </div>
+            <div class="og controls">
+              <div class="row" data-key="colors" data-modes="color gray pixel"><label>{ui.colors} <output></output></label><input type="range" min="2" max="64" step="1"></div>
+              {sub && <div class="row off" data-key="cell" data-modes="pixel"><label>Pixel size <output></output></label><input type="range" min="0" max="32" step="1"></div>}
+              <div class="row off" data-key="thresh" data-modes="mono"><label>{ui.thresh} <output></output></label><input type="range" min="20" max="235" step="1"></div>
+              <div class="row off inline" id="inkRow" data-modes="mono"><label style="margin:0">{ui.ink}</label><input type="color" id="ink" value="#111111"></div>
+              <div class="row" data-key="smooth" data-modes="color gray mono"><label>{ui.smooth} <output></output></label><input type="range" min="0" max="100" step="1"></div>
+            </div>
+          </div>
+          <details class="adv">
+            <summary>{ui.more}</summary>
+            <div class="adv-grid">
+              <div class="row" data-key="detail" data-modes="color gray mono"><label>{ui.detail} <output></output></label><input type="range" min="10" max="100" step="1"></div>
+              <div class="row" data-key="speckle" data-modes="color gray mono"><label>{ui.specks} <output></output></label><input type="range" min="0" max="120" step="1"></div>
+              <div class="row" data-key="blur" id="blurRow" data-modes="color gray mono"><label>{ui.denoise} <output></output></label><input type="range" min="0" max="4" step="0.5"></div>
+            </div>
+          </details>
+        </div>
+
+        <div class="out">
+          <h3 class="lbl"><b>3</b>{ui.step3}</h3>
+          <div class="ws-bar">
+            <div class="file">
+              <span class="live"><i></i>{ui.live}</span>
+              <div><b id="fname">{ui.loading}</b><small id="fmeta"></small></div>
+            </div>
+            <div class="out-actions">
+              <button class="btn" id="btnCopy" type="button">{ui.copy}</button>
+              <button class="btn primary dlbtn" id="btnDownload" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12m0 0 5-5m-5 5-5-5M4 20h16"/></svg>{ui.download}</button>
+            </div>
+          </div>
+
+          <div class="viewer" id="viewer">
+            <div class="pane orig"><div class="stage" id="stageO"><canvas id="origCanvas" aria-hidden="true"></canvas></div></div>
+            <div class="pane vec"><div class="stage" id="stageV"></div></div>
+            <span class="chip l">{ui.chipL}</span>
+            <span class="chip r">{ui.chipR}</span>
+            <div class="handle" id="handle" tabindex="0" role="slider" aria-label={ui.handle} aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <span class="grip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></svg></span>
+            </div>
+            <div class="scan"></div>
+            <div class="hint" id="hint">{ui.hint}</div>
+            <div class="zoombar">
+              <button id="zOut" aria-label={ui.zoomOut}>−</button>
+              <output id="zVal">100%</output>
+              <button id="zIn" aria-label={ui.zoomIn}>+</button>
+              <button id="zFit">{ui.fit}</button>
+              <button id="z400">400%</button>
+            </div>
+            <div class="veil"><div>{ui.veil}<small>{ui.veilSub}</small></div></div>
+          </div>
+
+          <div class="metrics m3">
+            <div class="tile">
+              <div class="k">{ui.fileSize}</div>
+              <div class="v"><span id="mSize">–</span></div>
+              <div class="s" id="mSizeSub">&nbsp;</div>
+              <div class="cmp">
+                <div class="a"><span>{barPng}</span><span class="bar"><i id="barPng" style="width:0"></i></span></div>
+                <div class="b"><span>SVG</span><span class="bar"><i id="barSvg" style="width:0"></i></span></div>
+              </div>
+            </div>
+            <div class="tile"><div class="k">{ui.tColors}</div><div class="v" id="mColors">–</div><div class="stack" id="mStack"></div></div>
+            <div class="tile"><div class="k">{ui.time}</div><div class="v"><span id="mTime">–</span><small>ms</small></div><div class="s" id="mRes">&nbsp;</div></div>
+          </div>
+
+          <details class="more">
+            <summary><span>{ui.moreD}</span><small>{ui.moreDSub}</small></summary>
+            <div class="more-in">
+              <div class="metrics m2">
+                <div class="tile"><div class="k">{ui.shapes}</div><div class="v" id="mShapes">–</div><div class="s">{ui.shapesSub}</div></div>
+                <div class="tile"><div class="k">{ui.nodes}</div><div class="v" id="mNodes">–</div><div class="s">{ui.nodesSub}</div></div>
+              </div>
+              <div class="pipe" id="pipe">
+                <div class="step"><span>{ui.p1}</span><b>–</b><i></i></div>
+                <div class="step"><span>{ui.p2}</span><b>–</b><i></i></div>
+                <div class="step"><span>{ui.p3}</span><b>–</b><i></i></div>
+                <div class="step"><span>{ui.p4}</span><b>–</b><i></i></div>
+                <div class="step"><span>{ui.p5}</span><b>–</b><i></i></div>
+              </div>
+              <div class="ws-lower">
+                <div class="card panel">
+                  <div class="panel-h"><h4>{ui.layers}</h4><span>{ui.layersSub}</span></div>
+                  <div class="layers" id="layers"></div>
+                </div>
+                <div class="card panel trace">
+                  <div class="panel-h"><h4>{ui.trace}</h4><span id="traceNote">{ui.traceSub}</span></div>
+                  <svg id="spark" viewBox="0 0 320 130" preserveAspectRatio="none" aria-hidden="true"></svg>
+                  <div class="legend"><span><i></i>{ui.legSvg}</span><span><i class="d"></i>{ui.legPng}</span></div>
+                </div>
+              </div>
+              <div class="card code">
+                <div class="panel-h"><h4>{ui.src}</h4><span id="codeMeta">–</span></div>
+                <pre class="mono" id="code" dir="ltr"></pre>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>

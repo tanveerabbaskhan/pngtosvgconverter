@@ -1,0 +1,20 @@
+---
+import { layoutLib } from '../lib/site.mjs';
+import Logo from './Logo.astro';
+import LangLinks from './LangLinks.astro';
+const { o } = Astro.props;
+const F = o.T.foot, b = o.base;
+const homeHref = o.locale === 'en' ? (b || './') : (o.kind === 'home' ? './' : b + o.locale + '/');
+const sr = layoutLib.sroot(o, b);
+const [copyA, copyB] = F.copy.split('{year}');
+---
+<footer class="foot"><div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-brand"><Logo href={homeHref} /><p>{F.blurb}</p></div>
+    <nav class="foot-col" aria-label={F.colExplore}><h2>{F.colExplore}</h2><ul><li><a href={homeHref}>{F.home}</a></li><li><a href={sr + 'sitemap/'}>{F.sitemap}</a></li></ul></nav>
+    <nav class="foot-col" aria-label={F.colCompany}><h2>{F.colCompany}</h2><ul><li><a href={sr + 'about-us/'}>{F.about}</a></li><li><a href={sr + 'contact-us/'}>{F.contact}</a></li></ul></nav>
+    <nav class="foot-col" aria-label={F.colLegal}><h2>{F.colLegal}</h2><ul><li><a href={sr + 'terms/'}>{F.terms}</a></li><li><a href={sr + 'privacy/'}>{F.privacy}</a></li></ul></nav>
+  </div>
+  <nav class="foot-lang" aria-label={F.lang}><h2>{F.lang}</h2><ul><LangLinks o={o} /></ul></nav>
+  <div class="foot-bar"><span>{copyA}<span id="yr"></span>{copyB || ''}</span><span>{F.made}</span></div>
+</div></footer>

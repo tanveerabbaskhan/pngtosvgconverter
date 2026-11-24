@@ -1,0 +1,10 @@
+---
+// Page hero: "<keyword>: <tail>" on the home page and English tool pages, a plain title on translated tool pages.
+const { hero } = Astro.props;
+---
+<section class={'hero hero3' + (hero.sub ? ' sub' : '')}><div class="wrap"><header class="hero-head">
+  {hero.h1
+    ? <h1>{hero.h1}</h1>
+    : <h1><span>{hero.kw}</span>: {hero.tail}</h1>}
+  <p class="hero-lead">{hero.lead}</p>
+</header></div></section>
