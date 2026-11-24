@@ -9,7 +9,14 @@ const NEW_LOCALES = new Set(['', 'de', 'es', 'fr', 'ja']);   // locales that sti
 //  /convert/<fmt>-to-svg/  -> /<fmt>-to-svg-converter/        (same tool, new slug)
 //  hub pages (/convert/, /compare/, /guides/, /svg/) -> /sitemap/ (the directory of all converters and tools)
 //  guides and explainers -> the tool that does what the article explains
+//  blog hub + posts -> the home page (the live site already 301s every /blog/* URL to its locale home; /nl/* -> English home)
 const RULES = {
+  '/blog/': '/',                                                 // live site 301s /blog/* to the locale home; keep that behaviour
+  '/blog/best-png-to-svg-converters/': '/',
+  '/blog/common-png-to-svg-mistakes/': '/',
+  '/blog/svg-vs-png-for-icons/': '/',
+  '/blog/vinyl-decal-from-photo-tutorial/': '/',
+  '/blog/why-is-my-svg-blurry/': '/',
   '/bulk-png-to-svg/': '/',                                     // PNG to SVG tool lives on the home page
   '/compare/': '/sitemap/',
   '/compare/png-vs-svg/': '/',                                  // PNG vs SVG -> the PNG to SVG converter
