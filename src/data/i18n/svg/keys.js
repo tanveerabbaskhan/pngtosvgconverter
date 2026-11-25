@@ -265,6 +265,6 @@ keys:["Add your SVG",
 "lossless",
 "full file",
 "Preview",
-"Code"],
-patterns:["^(\\d+) decimals?$","^([\\d.]+)% smaller$","^([\\d.]+)% larger$","^from (.+) gzipped$","^\\+(-?\\d+)% overhead$","^(-?\\d+)% vs source$","^Colors found \\((\\d+)\\)$","^quality (\\d+)%$","^Original · (.+)$","^Optimized · (.+)$","^Minified · (.+)$","^Compressed · (.+)$","^Result · (.+)$","^(PNG|JPG|WEBP|WebP|PDF|ICO|SVG) size$","^([\\d.]+)× of (.+)$","^(\\d+) element\\(s\\) use onclick-style attributes\\.?$","^Found “(.+)”\\.$","^([\\d.]+)% of canvas$","^(\\d+) element\\(s\\) load files from the web\\.?$","^url\\(#(.+)\\) points to nothing\\.$","^(\\d+) ids? (?:is|are) used more than once\\.?$"]
+"Code","smaller","smaller than the SVG","enlarged","reduced","source"],
+patterns:["^(\\d+) decimals?$","^([\\d.]+)% smaller$","^([\\d.]+)% larger$","^from (.+) gzipped$","^\\+(-?\\d+)% overhead$","^(-?\\d+)% vs source$","^Colors found \\((\\d+)\\)$","^quality (\\d+)%$","^Original · (.+)$","^Optimized · (.+)$","^Minified · (.+)$","^Compressed · (.+)$","^Result · (.+)$","^(PNG|JPG|WEBP|WebP|PDF|ICO|SVG) size$","^([\\d.]+)× of (.+)$","^(\\d+) element\\(s\\) use onclick-style attributes\\.?$","^Found “(.+)”\\.$","^([\\d.]+)% of canvas$","^(\\d+) element\\(s\\) load files from the web\\.?$","^url\\(#(.+)\\) points to nothing\\.$","^(\\d+) ids? (?:is|are) used more than once\\.?$","^([\\d.]+)× larger as (PNG|JPG|WEBP|PDF|ICO|SVG)$","^(\\d+) embedded sizes$","^(.+) vs input$"]
 };
