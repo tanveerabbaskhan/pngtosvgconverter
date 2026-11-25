@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com: Ücretsiz PNG SVG Dönüştürücü',desc:'Tarayıcınızda çalışan ücretsiz PNG SVG dönüştürücü. Her PNG’yi canlı önizlemeyle vektöre çevirin. Dosya yüklemeden, üyelik gerektirmeden.',alt:'pngtosvgconverter.com: canlı önizlemeli ücretsiz PNG SVG dönüştürücü'},
+ meta:{title:'Ücretsiz PNG SVG Dönüştürücü Çevrimiçi – Üyelik Yok, Anında',desc:'PNG’yi SVG’ye ücretsiz çevrimiçi dönüştürün. Her görüntüyü temiz ve ölçeklenebilir vektörlere çevirin. 42 ücretsiz SVG aracı, canlı önizleme, dosya yüklemeden, üyelik gerektirmeden.',alt:'Canlı önizlemeli ücretsiz çevrimiçi PNG SVG dönüştürücü'},
  h1:{kw:'PNG SVG Dönüştürücü',tail:'her PNG’yi ölçeklenebilir SVG’ye çevirin'},
  lead:'PNG’yi saniyeler içinde çevrimiçi SVG’ye dönüştürün. Bu ücretsiz dönüştürücü görselinizi tarayıcınızda temiz vektör yollarına çevirir; dosya yükleme, üyelik ve filigran yoktur.',
  skip:'Ana içeriğe geç',
