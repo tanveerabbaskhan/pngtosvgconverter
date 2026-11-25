@@ -33,5 +33,6 @@ module.exports={
  'unique fills & strokes':'固有の塗り・線','colors remapped':'色を置き換え','in the SVG':'（SVG内）','recolored SVG':'色を変えたSVG','full-canvas candidates':'全面の候補','background elements':'背景要素','transparent SVG':'透明なSVG','declared size':'宣言サイズ','total nodes':'ノード総数','<path> shapes':'<path>シェイプ','fills & strokes':'塗りと線',
  '2 spaces':'スペース2つ','4 spaces':'スペース4つ','as pasted':'貼り付けたまま','nesting levels':'ネストの階層','must fix':'要修正','should fix':'修正推奨','nice to have':'あると良い','<metadata> block':'<metadata>ブロック','<title> and <desc>':'<title>と<desc>','data-* attributes':'data-*属性','hidden entries':'隠れた項目','clean file':'クリーンなファイル','rendered locally':'ローカルで処理','1 page':'1ページ','pixels, JPEG 95%':'ピクセル、JPEG 95%',
  'after minify':'ミニファイ後','formatted':'整形後','lossless':'劣化なし','full file':'ファイル全体','Preview':'プレビュー','Code':'コード','copy-ready':'コピー可能',
- __r:['小数$1桁','$1%小さい','$1%大きい','$1（gzip後）','オーバーヘッド +$1%','元より$1%','検出した色（$1）','品質 $1%','元 · $1','最適化後 · $1','ミニファイ後 · $1','圧縮後 · $1','結果 · $1','$1のサイズ','$2の$1倍','onclick形式の属性を使う要素が$1個あります。','「$1」が見つかりました。','キャンバスの$1%','Webからファイルを読み込む要素が$1個あります。','url(#$1)は何も指していません。','$1個のidが複数回使われています。']
+ 'smaller':'小さい','smaller than the SVG':'SVGより小さい','enlarged':'拡大','reduced':'縮小','source':'ソース',
+ __r:['小数$1桁','$1%小さい','$1%大きい','$1（gzip後）','オーバーヘッド +$1%','元より$1%','検出した色（$1）','品質 $1%','元 · $1','最適化後 · $1','ミニファイ後 · $1','圧縮後 · $1','結果 · $1','$1のサイズ','$2の$1倍','onclick形式の属性を使う要素が$1個あります。','「$1」が見つかりました。','キャンバスの$1%','Webからファイルを読み込む要素が$1個あります。','url(#$1)は何も指していません。','$1個のidが複数回使われています。','$1× $2として大きい','$1個の埋め込みサイズ','入力と比較して$1']
 };
