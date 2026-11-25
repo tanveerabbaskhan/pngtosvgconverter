@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com：無料のPNG SVG変換ツール',desc:'ブラウザで動く無料のPNG SVG変換ツール。ライブプレビューでPNGをベクターに変換。アップロードも登録も不要です。',alt:'pngtosvgconverter.com：ライブプレビュー付きの無料PNG SVG変換ツール'},
+ meta:{title:'無料PNG SVG変換ツール オンライン – 登録不要、即変換',desc:'PNGをSVGに無料でオンライン変換。ブラウザで画像をきれいなスケーラブルベクターに変換。42の無料SVGツール、ライブプレビュー、アップロードも登録も不要です。',alt:'ライブプレビュー付きの無料オンラインPNG SVG変換ツール'},
  h1:{kw:'PNG SVG 変換',tail:'どんなPNGも拡大縮小できるSVGに'},
  lead:'PNGをSVGへオンラインで数秒で変換。この無料ツールは、画像をブラウザ内できれいなベクターパスにトレースします。アップロード、会員登録、透かしはありません。',
  skip:'メインコンテンツへ移動',
