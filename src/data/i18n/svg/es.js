@@ -47,11 +47,12 @@ module.exports={
  'unique fills & strokes':'rellenos y trazos únicos','colors remapped':'colores reasignados','in the SVG':'en el SVG','recolored SVG':'SVG recoloreado','full-canvas candidates':'candidatas que cubren todo el lienzo','background elements':'elementos de fondo','transparent SVG':'SVG transparente','declared size':'tamaño declarado','total nodes':'nodos en total','<path> shapes':'formas <path>','fills & strokes':'rellenos y trazos',
  '2 spaces':'2 espacios','4 spaces':'4 espacios','as pasted':'tal como se pegó','nesting levels':'niveles de anidación','must fix':'obligatorio corregir','should fix':'conviene corregir','nice to have':'recomendable','<metadata> block':'bloque <metadata>','<title> and <desc>':'<title> y <desc>','data-* attributes':'atributos data-*','hidden entries':'entradas ocultas','clean file':'archivo limpio','rendered locally':'procesado en local','1 page':'1 página','pixels, JPEG 95%':'píxeles, JPEG al 95 %',
  'after minify':'tras minificar','formatted':'formateado','lossless':'sin pérdida','input size':'tamaño de entrada','full file':'archivo completo','Preview':'Vista previa','Code':'Código',
+ 'smaller':'más pequeño','smaller than the SVG':'más pequeño que el SVG','enlarged':'ampliado','reduced':'reducido','source':'fuente',
  __p:[
   ['^(\\d+) decimals?$','$1 decimales'],
   ['^([\\d.]+)% smaller$','$1 % más pequeño'],['^([\\d.]+)% larger$','$1 % más grande'],
   ['^from (.+) gzipped$','de $1 con gzip'],['^\\+(-?\\d+)% overhead$','+$1 % de sobrecarga'],['^(-?\\d+)% vs source$','$1 % respecto al original'],
-  ['^Colors found \\((\\d+)\\)$','Colores encontrados ($1)'],['^quality (\\d+)%$','calidad $1 %'],
+ ['^Colors found \\((\\d+)\\)$','Colores encontrados ($1)'],['^quality (\\d+)%$','calidad $1 %'],
   ['^Original · (.+)$','Original · $1'],['^Optimized · (.+)$','Optimizado · $1'],['^Minified · (.+)$','Minificado · $1'],['^Compressed · (.+)$','Comprimido · $1'],['^Result · (.+)$','Resultado · $1'],
   ['^(PNG|JPG|WEBP|WebP|PDF|ICO|SVG) size$','Tamaño del $1'],['^([\\d.]+)× of (.+)$','$1× de $2'],
   ['^(\\d+) element\\(s\\) use onclick-style attributes\\.?$','$1 elemento(s) usan atributos de tipo onclick.'],
@@ -59,6 +60,9 @@ module.exports={
   ['^([\\d.]+)% of canvas$','$1 % del lienzo'],
   ['^(\\d+) element\\(s\\) load files from the web\\.?$','$1 elemento(s) cargan archivos de la web.'],
   ['^url\\(#(.+)\\) points to nothing\\.$','url(#$1) no apunta a nada.'],
-  ['^(\\d+) ids? (?:is|are) used more than once\\.?$','$1 id(s) se usan más de una vez.']
+  ['^(\\d+) ids? (?:is|are) used more than once\\.?$','$1 id(s) se usan más de una vez.'],
+  ['^([\\d.]+)× larger as (PNG|JPG|WEBP|PDF|ICO|SVG)$','$1× más grande como $2'],
+  ['^(\\d+) embedded sizes$','$1 tamaños incrustados'],
+  ['^(.+) vs input$','$1 respecto a la entrada']
  ]
 };
