@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com : convertisseur PNG en SVG gratuit',desc:'Convertisseur PNG en SVG gratuit, directement dans votre navigateur. Vectorisez n’importe quel PNG avec aperçu en direct. Sans envoi de fichier ni inscription.',alt:'pngtosvgconverter.com : convertisseur PNG en SVG gratuit avec aperçu en direct'},
+ meta:{title:'Convertisseur PNG en SVG Gratuit en Ligne – Sans Inscription, Instantané',desc:'Convertissez PNG en SVG gratuitement en ligne. Vectorisez vos images en vecteurs propres et évolutifs. 42 outils SVG gratuits, aperçu en direct, sans envoi ni inscription.',alt:'Convertisseur PNG en SVG gratuit en ligne avec aperçu en direct'},
  h1:{kw:'Convertisseur PNG en SVG',tail:'transformez n’importe quel PNG en SVG évolutif'},
  lead:'Convertissez un PNG en SVG en ligne en quelques secondes. Ce convertisseur gratuit trace votre image en chemins vectoriels propres dans votre navigateur, sans envoi de fichier, sans inscription et sans filigrane.',
  skip:'Aller au contenu principal',
