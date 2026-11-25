@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com: Penukar PNG ke SVG Percuma',desc:'Penukar PNG ke SVG percuma yang berjalan dalam pelayar. Vektorkan sebarang PNG dengan pratonton langsung. Tanpa muat naik fail dan tanpa pendaftaran.',alt:'pngtosvgconverter.com: penukar PNG ke SVG percuma dengan pratonton langsung'},
+ meta:{title:'Penukar PNG ke SVG Percuma Dalam Talian – Tanpa Daftar, Segera',desc:'Tukar PNG ke SVG percuma dalam talian. Vektorkan imej kepada vektor bersih dan boleh diskalakan. 42 alat SVG percuma, pratonton langsung, tanpa muat naik dan tanpa daftar.',alt:'Penukar PNG ke SVG percuma dalam talian dengan pratonton langsung'},
  h1:{kw:'Penukar PNG ke SVG',tail:'tukarkan sebarang PNG kepada SVG yang boleh diskalakan'},
  lead:'Tukar PNG kepada SVG dalam talian dalam beberapa saat. Penukar percuma ini menjejak imej anda menjadi laluan vektor yang bersih terus dalam pelayar, tanpa muat naik fail, tanpa pendaftaran dan tanpa tera air.',
  skip:'Langkau ke kandungan utama',
