@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com: Konverter PNG ke SVG Gratis',desc:'Konverter PNG ke SVG gratis yang berjalan di browser. Vektorkan PNG apa pun dengan pratinjau langsung. Tanpa unggah file dan tanpa daftar.',alt:'pngtosvgconverter.com: konverter PNG ke SVG gratis dengan pratinjau langsung'},
+ meta:{title:'Konverter PNG ke SVG Gratis Online – Tanpa Daftar, Instan',desc:'Ubah PNG ke SVG gratis online. Vektorkan gambar apa pun menjadi vektor yang bersih dan dapat diskalakan. 42 alat SVG gratis, pratinjau langsung, tanpa unggah file dan tanpa daftar.',alt:'Konverter PNG ke SVG gratis online dengan pratinjau langsung'},
  h1:{kw:'Konverter PNG ke SVG',tail:'ubah PNG apa pun menjadi SVG yang bisa diskalakan'},
  lead:'Konversi PNG ke SVG online dalam hitungan detik. Konverter gratis ini menelusuri gambar Anda menjadi jalur vektor yang bersih langsung di browser, tanpa unggah file, tanpa daftar, dan tanpa watermark.',
  skip:'Lompat ke konten utama',
