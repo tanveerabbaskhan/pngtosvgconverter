@@ -10,7 +10,7 @@ module.exports={
   OG:{path:'/og-image.png',w:1200,h:630,alt:'pngtosvgconverter.com: free PNG to SVG converter with a live preview'},
   SOCIAL:[],                       // add social profile URLs here to populate Organization.sameAs
   VERIFY:{google:'ZsbbYdnAKNqMrWxXeVfk9NgsMpZiTG5I-ZhOEeJoCyw',bing:'',yandex:''},   // live site's Search Console token (verified on pngtosvgconverter.com, 24 Nov 2026)
-  ADSENSE:'ca-pub-7770994681303453',      // AdSense publisher id (meta tag, script, public/ads.txt)
+  ADSENSE:'',      // AdSense DISABLED 2026-11-25 — no ad units on the site; publisher id was ca-pub-7770994681303453 (restore it to re-enable ads)
   GA4:'G-796EBDP5V3',                       // Google Analytics 4 measurement id (live site's, verified 24 Nov 2026)
   CONTACT_ENDPOINT:process.env.CONTACT_ENDPOINT||'',   // optional form-handler URL (e.g. Formspree); empty = mailto fallback
   UPDATED:new Date().toISOString().slice(0,10),
