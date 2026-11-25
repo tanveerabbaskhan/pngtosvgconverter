@@ -7,6 +7,10 @@ const LB=Object.fromEntries(LOCALES.map(l=>[l.code,l]));
 const urlOf=(p,loc='en')=>DOMAIN+(loc==='en'?'':'/'+loc)+p;
 const fill=(s,o)=>String(s).replace(/\{(\w+)\}/g,(m,k)=>o[k]!==undefined?o[k]:m);
 
+// Schema dates: the Astro rebuild went live 2026-11-25, when the current URLs were first published.
+// dateModified is the build date, so it updates on every deploy.
+const PUBLISHED='2026-11-25';
+const MODIFIED=new Date().toISOString().slice(0,10);
 const logoSvg='<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="9" style="fill:var(--accent)"/><path d="M8 21 13 11l4 7 3-4 4 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="11" r="2" fill="#fff"/><circle cx="24" cy="21" r="2" fill="#fff"/></svg>';
 
 function hueCss(h){
@@ -50,7 +54,7 @@ function graph(o){
   g.push({'@type':'WebSite','@id':siteId,url:DOMAIN+'/',name:NAME,description:S.DESCRIPTION,publisher:{'@id':orgId},inLanguage:LOCALES.map(l=>l.code)});
   navItems(o).forEach(n=>g.push({'@type':'SiteNavigationElement','@id':DOMAIN+'/#nav-'+n.key+(o.kind==='static'||o.kind==='404'?'':'-'+(o.locale)),name:n.label,url:n.abs}));
   g.push({'@type':'ImageObject','@id':imgId,url:DOMAIN+S.OG.path,contentUrl:DOMAIN+S.OG.path,width:S.OG.w,height:S.OG.h,caption:o.ogAlt||S.OG.alt,inLanguage:lang});
-  const wp={'@type':o.pageType||'WebPage','@id':pageId,url,name:o.title,description:o.desc,inLanguage:lang,isPartOf:{'@id':siteId},primaryImageOfPage:{'@id':imgId},image:{'@id':imgId},potentialAction:[{'@type':'ReadAction',target:[url]}]};
+  const wp={'@type':o.pageType||'WebPage','@id':pageId,url,name:o.title,description:o.desc,inLanguage:lang,isPartOf:{'@id':siteId},primaryImageOfPage:{'@id':imgId},image:{'@id':imgId},datePublished:PUBLISHED,dateModified:MODIFIED,potentialAction:[{'@type':'ReadAction',target:[url]}]};
   if(o.about)wp.about={'@id':orgId};
   if(o.pageType==='ContactPage')wp.mainEntity={'@id':orgId};
   if(o.crumbs&&o.crumbs.length){wp.breadcrumb={'@id':url+'#breadcrumb'}}
@@ -60,7 +64,7 @@ function graph(o){
   if(o.crumbs&&o.crumbs.length){
     g.push({'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:o.crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name,item:c.url}))});
   }
-  if(o.app)g.push({'@type':'WebApplication','@id':url+'#app',name:o.app.name,url,description:o.app.desc,applicationCategory:'MultimediaApplication',operatingSystem:'Any',browserRequirements:'Requires JavaScript and a current web browser',isAccessibleForFree:true,offers:{'@type':'Offer',price:'0',priceCurrency:'USD'},inLanguage:lang,publisher:{'@id':orgId}});
+  if(o.app)g.push({'@type':'WebApplication','@id':url+'#app',name:o.app.name,url,description:o.app.desc,applicationCategory:'MultimediaApplication',operatingSystem:'Windows, macOS, Linux, Android, iOS',browserRequirements:'Requires JavaScript and a current web browser',isAccessibleForFree:true,offers:{'@type':'Offer',price:0,priceCurrency:'USD'},inLanguage:lang,publisher:{'@id':orgId}});
   if(o.faq&&o.faq.length)g.push({'@type':'FAQPage','@id':url+'#faq',url:url+'#faq',name:o.faqName||'FAQ',inLanguage:lang,isPartOf:{'@id':pageId},mainEntity:o.faq.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a,inLanguage:lang}}))});
   if(o.itemList)g.push(o.itemList);
   return {'@context':'https://schema.org','@graph':g};
