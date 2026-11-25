@@ -59,7 +59,6 @@ function graph(o){
   if(o.pageType==='ContactPage')wp.mainEntity={'@id':orgId};
   if(o.crumbs&&o.crumbs.length){wp.breadcrumb={'@id':url+'#breadcrumb'}}
   if(o.app){wp.mainEntity={'@id':url+'#app'}}
-  if(o.directory)wp.hasPart={'@id':DOMAIN+'/#directory'};
   g.push(wp);
   if(o.crumbs&&o.crumbs.length){
     g.push({'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:o.crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,name:c.name,item:c.url}))});
