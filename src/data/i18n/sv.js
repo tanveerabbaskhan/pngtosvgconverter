@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com: gratis PNG till SVG-konverterare',desc:'Gratis PNG till SVG-konverterare som körs i webbläsaren. Vektorisera vilken PNG som helst med liveförhandsgranskning. Ingen uppladdning, ingen registrering.',alt:'pngtosvgconverter.com: gratis PNG till SVG-konverterare med liveförhandsgranskning'},
+ meta:{title:'Gratis PNG till SVG-konverterare online – ingen registrering, direkt',desc:'Konvertera PNG till SVG gratis online. Vektorisera vilken bild som helst till rena, skalbara vektorer. 42 gratis SVG-verktyg, liveförhandsgranskning, ingen uppladdning, ingen registrering.',alt:'Gratis PNG till SVG-konverterare online med liveförhandsgranskning'},
  h1:{kw:'PNG till SVG-konverterare',tail:'förvandla vilken PNG som helst till skalbar SVG'},
  lead:'Konvertera PNG till SVG online på några sekunder. Den här gratis konverteraren spårar din bild till rena vektorbanor direkt i webbläsaren – utan uppladdning, registrering eller vattenstämpel.',
  skip:'Hoppa till huvudinnehållet',
