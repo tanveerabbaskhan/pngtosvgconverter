@@ -1,7 +1,7 @@
 // English master dictionary for the homepage. Every locale file mirrors this exact shape.
 // Tokens: {n},{pct},{size},{w},{h},{a},{b},{year} are filled at runtime; [[slug]] becomes a link to that (English) page.
 module.exports={
- meta:{title:'pngtosvgconverter.com: Free PNG to SVG Converter',desc:'Free PNG to SVG converter that runs in your browser. Trace any PNG into clean, scalable vector paths with a live preview. No upload, no signup.',alt:'pngtosvgconverter.com: free PNG to SVG converter with a live preview'},
+ meta:{title:'Free PNG to SVG Converter Online – No Signup, Instant',desc:'Convert PNG to SVG free online. Trace any image into clean, scalable vectors in your browser. 42 free SVG tools, live preview, no upload, no signup.',alt:'Free PNG to SVG converter online with live preview'},
  h1:{kw:'PNG to SVG Converter',tail:'Turn Any PNG into a Scalable SVG'},
  lead:'Convert PNG to SVG online in seconds. This free PNG to SVG converter traces your image into clean vector paths in your browser, with no upload, signup or watermark.',
  skip:'Skip to main content',
