@@ -59,20 +59,20 @@ for (const loc of LOCALES) {
   const f = path.join(ROOT, 'src/data/i18n/svg/' + loc + '.js');
   let s = fs.readFileSync(f, 'utf8');
   const isEs = loc === 'es';
-  const marker = isEs ? '\n __p:[' : '\n __r:[';
-  const mi = s.indexOf(marker);
-  must(mi >= 0, loc + ': pattern marker not found');
+  const patKey = isEs ? '__p:[' : '__r:[';
+  const pi = s.indexOf(patKey);
+  must(pi >= 0, loc + ': pattern marker not found');
   // exact keys: insert a line with the missing ones before the pattern block
-  const missingExact = EXACT_KEYS.filter(([k]) => !s.slice(0, mi).includes("'" + k + "':"));
+  const missingExact = EXACT_KEYS.filter(([k]) => !s.slice(0, pi).includes("'" + k + "':"));
   if (missingExact.length) {
+    const lineStart = s.lastIndexOf('\n', pi) + 1;
     const line = ' ' + missingExact.map(([k, t]) => "'" + k + "':'" + t[loc] + "'").join(',') + ',\n';
-    s = s.slice(0, mi) + '\n' + line.trimEnd() + s.slice(mi);
+    s = s.slice(0, lineStart) + line + s.slice(lineStart);
     console.log(loc + '.js: added keys ' + missingExact.map(([k]) => k).join(', '));
   }
   if (isEs) {
-    const endMark = '\n ]\n};';
-    const ei = s.indexOf(endMark);
-    must(ei >= 0, 'es: __p end not found');
+    const ei = s.lastIndexOf(']'); // closes the __p array (last in file)
+    must(ei > pi, 'es: __p end not found');
     const missing = PATTERNS.filter(([p]) => !s.includes("['" + filePat(p) + "',"));
     if (missing.length) {
       const pairs = missing.map(([p, t]) => `  ['${filePat(p)}','${t[loc]}']`).join(',\n');
@@ -80,7 +80,7 @@ for (const loc of LOCALES) {
       console.log('es.js: added patterns ' + missing.map(([p]) => p).join(' | '));
     }
   } else {
-    const rStart = s.indexOf('__r:[');
+    const rStart = pi;
     const rEnd = s.indexOf(']', rStart);
     must(rStart >= 0 && rEnd > rStart, loc + ': __r close not found');
     const missing = PATTERNS.filter(([, t]) => !s.slice(rStart, rEnd).includes("'" + t[loc] + "'"));
