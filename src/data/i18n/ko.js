@@ -1,5 +1,5 @@
 module.exports={
- meta:{title:'pngtosvgconverter.com: 무료 PNG SVG 변환기',desc:'브라우저에서 바로 쓰는 무료 PNG SVG 변환기. 실시간 미리보기로 PNG를 벡터로 변환하세요. 업로드도 가입도 필요 없습니다.',alt:'pngtosvgconverter.com: 실시간 미리보기가 있는 무료 PNG SVG 변환기'},
+ meta:{title:'무료 PNG SVG 변환기 온라인 – 가입 불필요, 즉시 변환',desc:'PNG를 SVG로 무료 온라인 변환. 브라우저에서 이미지를 깨끗하고 확장 가능한 벡터로 변환하세요. 무료 SVG 도구 42개, 실시간 미리보기, 업로드도 가입도 필요 없습니다.',alt:'실시간 미리보기가 있는 무료 온라인 PNG SVG 변환기'},
  h1:{kw:'PNG SVG 변환기',tail:'모든 PNG를 확대해도 깨지지 않는 SVG로'},
  lead:'PNG를 SVG로 온라인에서 몇 초 만에 변환하세요. 이 무료 변환기는 브라우저 안에서 이미지를 깔끔한 벡터 경로로 추적합니다. 업로드, 가입, 워터마크가 없습니다.',
  skip:'본문으로 건너뛰기',
